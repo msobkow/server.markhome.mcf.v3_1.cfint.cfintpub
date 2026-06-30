@@ -130,7 +130,7 @@ extends ICFSecPubSchema
 		}
 		
 		public static void setBackingCFIntPubSchema(ICFIntPubSchema backingSchema) {
-			ICFIntPubSchema.backingCFIntPub.set(backingSchema);
+			ICFIntPubSchema.backingCFIntPubSchema.set(backingSchema);
 		}
 		
 		public ICFIntPubSchema getCFIntPubSchema();
@@ -418,22 +418,22 @@ extends ICFSecPubSchema
 	/**
 	 *	Get the factory for CFSecPub data objects.
 	 */
-	public ICFSecPubFactory getCFSecPubFactory();
+	// public ICFSecPubFactory getCFSecPubFactory();
 
 	/**
 	 *	Get the buffer factory for CFSecPub data buffers.
 	 */
-	public CFSecPubBuffFactoryService getCFSecPubBuffFactory();
+	// public CFSecPubBuffFactoryService getCFSecPubBuffFactory();
 
 	/**
 	 *	Get the factory for CFIntPub data objects.
 	 */
-	public ICFIntPubFactory getCFIntPubFactory();
+	// public ICFIntPubFactory getCFIntPubFactory();
 
 	/**
 	 *	Get the buffer factory for CFIntPub data buffers.
 	 */
-	public CFIntPubBuffFactoryService getCFIntPubBuffFactory();
+	// public CFIntPubBuffFactoryService getCFIntPubBuffFactory();
 
 	/**
 	 *	Get the License Table interface for the schema.
