@@ -56,7 +56,7 @@ public interface ICFIntPubTldTable
 	 *
 	 *	@param	rec	The instance interface to be created.
 	 */
-	ICFIntPubTld createTld( ICFSecPubAuthorization Authorization,
+	public ICFIntPubTld pubcreateTld( ICFSecPubAuthorization Authorization,
 		ICFIntPubTld rec );
 
 
@@ -68,7 +68,7 @@ public interface ICFIntPubTldTable
 	 *
 	 *	@param	rec	The instance interface to be updated
 	 */
-	ICFIntPubTld updateTld( ICFSecPubAuthorization Authorization,
+	public ICFIntPubTld pubupdateTld( ICFSecPubAuthorization Authorization,
 		ICFIntPubTld rec );
 
 
@@ -79,7 +79,7 @@ public interface ICFIntPubTldTable
 	 *
 	 *	@param	rec	The instance interface to be deleted.
 	 */
-	void deleteTld( ICFSecPubAuthorization Authorization,
+	public void pubdeleteTld( ICFSecPubAuthorization Authorization,
 		ICFIntPubTld rec );
 	/**
 	 *	Delete the Tld instance identified by the primary key.
@@ -88,7 +88,7 @@ public interface ICFIntPubTldTable
 	 *
 	 *	@param	argKey	The primary key identifying the instance to be deleted.
 	 */
-	void deleteTldByIdIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteTldByIdIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argKey );
 	/**
 	 *	Delete the Tld instances identified by the key TenantIdx.
@@ -97,7 +97,7 @@ public interface ICFIntPubTldTable
 	 *
 	 *	@param	TenantId	The Tld key attribute of the instance generating the id.
 	 */
-	void deleteTldByTenantIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteTldByTenantIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argTenantId );
 
 	/**
@@ -107,7 +107,7 @@ public interface ICFIntPubTldTable
 	 *
 	 *	@param	argKey	The key identifying the instances to be deleted.
 	 */
-	void deleteTldByTenantIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteTldByTenantIdx( ICFSecPubAuthorization Authorization,
 		ICFIntPubTldByTenantIdxKey argKey );
 	/**
 	 *	Delete the Tld instances identified by the key NameIdx.
@@ -116,7 +116,7 @@ public interface ICFIntPubTldTable
 	 *
 	 *	@param	Name	The Tld key attribute of the instance generating the id.
 	 */
-	void deleteTldByNameIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteTldByNameIdx( ICFSecPubAuthorization Authorization,
 		String argName );
 
 	/**
@@ -126,7 +126,7 @@ public interface ICFIntPubTldTable
 	 *
 	 *	@param	argKey	The key identifying the instances to be deleted.
 	 */
-	void deleteTldByNameIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteTldByNameIdx( ICFSecPubAuthorization Authorization,
 		ICFIntPubTldByNameIdxKey argKey );
 
 
@@ -140,7 +140,7 @@ public interface ICFIntPubTldTable
 	 *	@return The record instance for the specified primary key, or null if there is
 	 *		no such existing key value.
 	 */
-	ICFIntPubTld readDerived( ICFSecPubAuthorization Authorization,
+	public ICFIntPubTld pubreadDerived( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 PKey );
 
 	/**
@@ -153,7 +153,7 @@ public interface ICFIntPubTldTable
 	 *	@return The record instance for the specified primary key, or null if there is
 	 *		no such existing key value.
 	 */
-	ICFIntPubTld lockDerived( ICFSecPubAuthorization Authorization,
+	public ICFIntPubTld publockDerived( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 PKey );
 
 	/**
@@ -163,7 +163,7 @@ public interface ICFIntPubTldTable
 	 *
 	 *	@return An array of derived record instances, potentially with 0 elements in the set.
 	 */
-	ICFIntPubTld[] readPubAllDerived( ICFSecPubAuthorization Authorization );
+	public ICFIntPubTld[] pubreadPubAllDerived( ICFSecPubAuthorization Authorization );
 
 	/**
 	 *	Read the derived Tld record instance identified by the unique key IdIdx.
@@ -175,7 +175,7 @@ public interface ICFIntPubTldTable
 	 *	@return The record instance for the specified key, or null if there is
 	 *		no such existing key value.
 	 */
-	ICFIntPubTld readDerivedByIdIdx( ICFSecPubAuthorization Authorization,
+	public ICFIntPubTld pubreadDerivedByIdIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 Id );
 
 	/**
@@ -187,7 +187,7 @@ public interface ICFIntPubTldTable
 	 *
 	 *	@return An array of derived instances for the specified key, potentially with 0 elements in the set.
 	 */
-	ICFIntPubTld[] readDerivedByTenantIdx( ICFSecPubAuthorization Authorization,
+	public ICFIntPubTld[] pubreadDerivedByTenantIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 TenantId );
 
 	/**
@@ -200,7 +200,7 @@ public interface ICFIntPubTldTable
 	 *	@return The record instance for the specified key, or null if there is
 	 *		no such existing key value.
 	 */
-	ICFIntPubTld readDerivedByNameIdx( ICFSecPubAuthorization Authorization,
+	public ICFIntPubTld pubreadDerivedByNameIdx( ICFSecPubAuthorization Authorization,
 		String Name );
 
 	/**
@@ -215,7 +215,7 @@ public interface ICFIntPubTldTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFIntPubTld readRec( ICFSecPubAuthorization Authorization,
+	public ICFIntPubTld pubreadRec( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 PKey );
 
 	/**
@@ -230,7 +230,7 @@ public interface ICFIntPubTldTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFIntPubTld lockRec( ICFSecPubAuthorization Authorization,
+	public ICFIntPubTld publockRec( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 PKey );
 
 	/**
@@ -240,7 +240,7 @@ public interface ICFIntPubTldTable
 	 *
 	 *	@return All the specific Tld instances in the database accessible for the Authorization.
 	 */
-	ICFIntPubTld[] readAllRec( ICFSecPubAuthorization Authorization );
+	public ICFIntPubTld[] pubreadAllRec( ICFSecPubAuthorization Authorization );
 
 	/**
 	 *	Read the specific Tld record instance identified by the unique key IdIdx.
@@ -254,7 +254,7 @@ public interface ICFIntPubTldTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFIntPubTld readRecByIdIdx( ICFSecPubAuthorization Authorization,
+	public ICFIntPubTld pubreadRecByIdIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 Id );
 
 	/**
@@ -268,7 +268,7 @@ public interface ICFIntPubTldTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFIntPubTld[] readRecByTenantIdx( ICFSecPubAuthorization Authorization,
+	public ICFIntPubTld[] pubreadRecByTenantIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 TenantId );
 
 	/**
@@ -283,6 +283,6 @@ public interface ICFIntPubTldTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFIntPubTld readRecByNameIdx( ICFSecPubAuthorization Authorization,
+	public ICFIntPubTld pubreadRecByNameIdx( ICFSecPubAuthorization Authorization,
 		String Name );
 }

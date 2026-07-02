@@ -77,13 +77,13 @@ public interface ICFIntPubTopProjectFactory
 	 *
 	 *	@return	The new instance.
 	 */
-	public ICFIntPubTopProject newRec();
+	public ICFIntPubTopProject newPubRec();
 
 	/**
 	 *	Allocate a public TopProject history interface implementation.
 	 *
 	 *	@return	The new instance.
 	 */
-	public ICFIntPubTopProjectH newHRec();
+	public ICFIntPubTopProjectH newPubHRec();
 
 }

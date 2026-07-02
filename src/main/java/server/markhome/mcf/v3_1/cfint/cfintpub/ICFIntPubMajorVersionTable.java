@@ -56,7 +56,7 @@ public interface ICFIntPubMajorVersionTable
 	 *
 	 *	@param	rec	The instance interface to be created.
 	 */
-	ICFIntPubMajorVersion createMajorVersion( ICFSecPubAuthorization Authorization,
+	public ICFIntPubMajorVersion pubcreateMajorVersion( ICFSecPubAuthorization Authorization,
 		ICFIntPubMajorVersion rec );
 
 
@@ -68,7 +68,7 @@ public interface ICFIntPubMajorVersionTable
 	 *
 	 *	@param	rec	The instance interface to be updated
 	 */
-	ICFIntPubMajorVersion updateMajorVersion( ICFSecPubAuthorization Authorization,
+	public ICFIntPubMajorVersion pubupdateMajorVersion( ICFSecPubAuthorization Authorization,
 		ICFIntPubMajorVersion rec );
 
 
@@ -79,7 +79,7 @@ public interface ICFIntPubMajorVersionTable
 	 *
 	 *	@param	rec	The instance interface to be deleted.
 	 */
-	void deleteMajorVersion( ICFSecPubAuthorization Authorization,
+	public void pubdeleteMajorVersion( ICFSecPubAuthorization Authorization,
 		ICFIntPubMajorVersion rec );
 	/**
 	 *	Delete the MajorVersion instance identified by the primary key.
@@ -88,7 +88,7 @@ public interface ICFIntPubMajorVersionTable
 	 *
 	 *	@param	argKey	The primary key identifying the instance to be deleted.
 	 */
-	void deleteMajorVersionByIdIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteMajorVersionByIdIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argKey );
 	/**
 	 *	Delete the MajorVersion instances identified by the key TenantIdx.
@@ -97,7 +97,7 @@ public interface ICFIntPubMajorVersionTable
 	 *
 	 *	@param	TenantId	The MajorVersion key attribute of the instance generating the id.
 	 */
-	void deleteMajorVersionByTenantIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteMajorVersionByTenantIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argTenantId );
 
 	/**
@@ -107,7 +107,7 @@ public interface ICFIntPubMajorVersionTable
 	 *
 	 *	@param	argKey	The key identifying the instances to be deleted.
 	 */
-	void deleteMajorVersionByTenantIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteMajorVersionByTenantIdx( ICFSecPubAuthorization Authorization,
 		ICFIntPubMajorVersionByTenantIdxKey argKey );
 	/**
 	 *	Delete the MajorVersion instances identified by the key SubProjectIdx.
@@ -116,7 +116,7 @@ public interface ICFIntPubMajorVersionTable
 	 *
 	 *	@param	SubProjectId	The MajorVersion key attribute of the instance generating the id.
 	 */
-	void deleteMajorVersionBySubProjectIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteMajorVersionBySubProjectIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argSubProjectId );
 
 	/**
@@ -126,7 +126,7 @@ public interface ICFIntPubMajorVersionTable
 	 *
 	 *	@param	argKey	The key identifying the instances to be deleted.
 	 */
-	void deleteMajorVersionBySubProjectIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteMajorVersionBySubProjectIdx( ICFSecPubAuthorization Authorization,
 		ICFIntPubMajorVersionBySubProjectIdxKey argKey );
 	/**
 	 *	Delete the MajorVersion instances identified by the key NameIdx.
@@ -137,7 +137,7 @@ public interface ICFIntPubMajorVersionTable
 	 *
 	 *	@param	Name	The MajorVersion key attribute of the instance generating the id.
 	 */
-	void deleteMajorVersionByNameIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteMajorVersionByNameIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argSubProjectId,
 		String argName );
 
@@ -148,7 +148,7 @@ public interface ICFIntPubMajorVersionTable
 	 *
 	 *	@param	argKey	The key identifying the instances to be deleted.
 	 */
-	void deleteMajorVersionByNameIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteMajorVersionByNameIdx( ICFSecPubAuthorization Authorization,
 		ICFIntPubMajorVersionByNameIdxKey argKey );
 
 
@@ -162,7 +162,7 @@ public interface ICFIntPubMajorVersionTable
 	 *	@return The record instance for the specified primary key, or null if there is
 	 *		no such existing key value.
 	 */
-	ICFIntPubMajorVersion readDerived( ICFSecPubAuthorization Authorization,
+	public ICFIntPubMajorVersion pubreadDerived( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 PKey );
 
 	/**
@@ -175,7 +175,7 @@ public interface ICFIntPubMajorVersionTable
 	 *	@return The record instance for the specified primary key, or null if there is
 	 *		no such existing key value.
 	 */
-	ICFIntPubMajorVersion lockDerived( ICFSecPubAuthorization Authorization,
+	public ICFIntPubMajorVersion publockDerived( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 PKey );
 
 	/**
@@ -185,7 +185,7 @@ public interface ICFIntPubMajorVersionTable
 	 *
 	 *	@return An array of derived record instances, potentially with 0 elements in the set.
 	 */
-	ICFIntPubMajorVersion[] readPubAllDerived( ICFSecPubAuthorization Authorization );
+	public ICFIntPubMajorVersion[] pubreadPubAllDerived( ICFSecPubAuthorization Authorization );
 
 	/**
 	 *	Read the derived MajorVersion record instance identified by the unique key IdIdx.
@@ -197,7 +197,7 @@ public interface ICFIntPubMajorVersionTable
 	 *	@return The record instance for the specified key, or null if there is
 	 *		no such existing key value.
 	 */
-	ICFIntPubMajorVersion readDerivedByIdIdx( ICFSecPubAuthorization Authorization,
+	public ICFIntPubMajorVersion pubreadDerivedByIdIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 Id );
 
 	/**
@@ -209,7 +209,7 @@ public interface ICFIntPubMajorVersionTable
 	 *
 	 *	@return An array of derived instances for the specified key, potentially with 0 elements in the set.
 	 */
-	ICFIntPubMajorVersion[] readDerivedByTenantIdx( ICFSecPubAuthorization Authorization,
+	public ICFIntPubMajorVersion[] pubreadDerivedByTenantIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 TenantId );
 
 	/**
@@ -221,7 +221,7 @@ public interface ICFIntPubMajorVersionTable
 	 *
 	 *	@return An array of derived instances for the specified key, potentially with 0 elements in the set.
 	 */
-	ICFIntPubMajorVersion[] readDerivedBySubProjectIdx( ICFSecPubAuthorization Authorization,
+	public ICFIntPubMajorVersion[] pubreadDerivedBySubProjectIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 SubProjectId );
 
 	/**
@@ -236,7 +236,7 @@ public interface ICFIntPubMajorVersionTable
 	 *	@return The record instance for the specified key, or null if there is
 	 *		no such existing key value.
 	 */
-	ICFIntPubMajorVersion readDerivedByNameIdx( ICFSecPubAuthorization Authorization,
+	public ICFIntPubMajorVersion pubreadDerivedByNameIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 SubProjectId,
 		String Name );
 
@@ -252,7 +252,7 @@ public interface ICFIntPubMajorVersionTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFIntPubMajorVersion readRec( ICFSecPubAuthorization Authorization,
+	public ICFIntPubMajorVersion pubreadRec( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 PKey );
 
 	/**
@@ -267,7 +267,7 @@ public interface ICFIntPubMajorVersionTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFIntPubMajorVersion lockRec( ICFSecPubAuthorization Authorization,
+	public ICFIntPubMajorVersion publockRec( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 PKey );
 
 	/**
@@ -277,7 +277,7 @@ public interface ICFIntPubMajorVersionTable
 	 *
 	 *	@return All the specific MajorVersion instances in the database accessible for the Authorization.
 	 */
-	ICFIntPubMajorVersion[] readAllRec( ICFSecPubAuthorization Authorization );
+	public ICFIntPubMajorVersion[] pubreadAllRec( ICFSecPubAuthorization Authorization );
 
 	/**
 	 *	Read the specific MajorVersion record instance identified by the unique key IdIdx.
@@ -291,7 +291,7 @@ public interface ICFIntPubMajorVersionTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFIntPubMajorVersion readRecByIdIdx( ICFSecPubAuthorization Authorization,
+	public ICFIntPubMajorVersion pubreadRecByIdIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 Id );
 
 	/**
@@ -305,7 +305,7 @@ public interface ICFIntPubMajorVersionTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFIntPubMajorVersion[] readRecByTenantIdx( ICFSecPubAuthorization Authorization,
+	public ICFIntPubMajorVersion[] pubreadRecByTenantIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 TenantId );
 
 	/**
@@ -319,7 +319,7 @@ public interface ICFIntPubMajorVersionTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFIntPubMajorVersion[] readRecBySubProjectIdx( ICFSecPubAuthorization Authorization,
+	public ICFIntPubMajorVersion[] pubreadRecBySubProjectIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 SubProjectId );
 
 	/**
@@ -336,7 +336,7 @@ public interface ICFIntPubMajorVersionTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFIntPubMajorVersion readRecByNameIdx( ICFSecPubAuthorization Authorization,
+	public ICFIntPubMajorVersion pubreadRecByNameIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 SubProjectId,
 		String Name );
 }

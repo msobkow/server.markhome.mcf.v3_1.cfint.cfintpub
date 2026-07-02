@@ -70,13 +70,13 @@ public interface ICFIntPubURLProtocolFactory
 	 *
 	 *	@return	The new instance.
 	 */
-	public ICFIntPubURLProtocol newRec();
+	public ICFIntPubURLProtocol newPubRec();
 
 	/**
 	 *	Allocate a public URLProtocol history interface implementation.
 	 *
 	 *	@return	The new instance.
 	 */
-	public ICFIntPubURLProtocolH newHRec();
+	public ICFIntPubURLProtocolH newPubHRec();
 
 }

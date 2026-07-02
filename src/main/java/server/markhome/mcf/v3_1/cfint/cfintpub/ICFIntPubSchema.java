@@ -42,12 +42,12 @@ import org.springframework.beans.BeansException;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;
 import server.markhome.mcf.v3_1.cfsec.cfsecpub.*;
-$importJavaPubPackageSchemaNameBuffDotFactoryService$
-//import server.markhome.mcf.v3_1.cfint.cfintpub.buff.CFIntPubBuffSchema;
-//import server.markhome.mcf.v3_1.cfint.cfintpub.buff.CFIntPubBuffFactoryService;
+
+		import server.markhome.mcf.v3_1.cfsec.cfsecpub.buff.CFSecPubBuffFactoryService;
+		import server.markhome.mcf.v3_1.cfint.cfintpub.buff.CFIntPubBuffFactoryService;
 
 public interface ICFIntPubSchema
-extends ICFSecPubSchema
+extends IcfsecpubSchema
 {
 
 	public static final String SCHEMA_NAME = "CFInt";

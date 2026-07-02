@@ -77,13 +77,13 @@ public interface ICFIntPubTopDomainFactory
 	 *
 	 *	@return	The new instance.
 	 */
-	public ICFIntPubTopDomain newRec();
+	public ICFIntPubTopDomain newPubRec();
 
 	/**
 	 *	Allocate a public TopDomain history interface implementation.
 	 *
 	 *	@return	The new instance.
 	 */
-	public ICFIntPubTopDomainH newHRec();
+	public ICFIntPubTopDomainH newPubHRec();
 
 }

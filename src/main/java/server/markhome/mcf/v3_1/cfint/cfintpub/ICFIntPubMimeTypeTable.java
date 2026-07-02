@@ -56,7 +56,7 @@ public interface ICFIntPubMimeTypeTable
 	 *
 	 *	@param	rec	The instance interface to be created.
 	 */
-	ICFIntPubMimeType createMimeType( ICFSecPubAuthorization Authorization,
+	public ICFIntPubMimeType pubcreateMimeType( ICFSecPubAuthorization Authorization,
 		ICFIntPubMimeType rec );
 
 
@@ -68,7 +68,7 @@ public interface ICFIntPubMimeTypeTable
 	 *
 	 *	@param	rec	The instance interface to be updated
 	 */
-	ICFIntPubMimeType updateMimeType( ICFSecPubAuthorization Authorization,
+	public ICFIntPubMimeType pubupdateMimeType( ICFSecPubAuthorization Authorization,
 		ICFIntPubMimeType rec );
 
 
@@ -79,7 +79,7 @@ public interface ICFIntPubMimeTypeTable
 	 *
 	 *	@param	rec	The instance interface to be deleted.
 	 */
-	void deleteMimeType( ICFSecPubAuthorization Authorization,
+	public void pubdeleteMimeType( ICFSecPubAuthorization Authorization,
 		ICFIntPubMimeType rec );
 	/**
 	 *	Delete the MimeType instance identified by the primary key.
@@ -88,7 +88,7 @@ public interface ICFIntPubMimeTypeTable
 	 *
 	 *	@param	argKey	The primary key identifying the instance to be deleted.
 	 */
-	void deleteMimeTypeByIdIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteMimeTypeByIdIdx( ICFSecPubAuthorization Authorization,
 		Integer argKey );
 	/**
 	 *	Delete the MimeType instances identified by the key UNameIdx.
@@ -97,7 +97,7 @@ public interface ICFIntPubMimeTypeTable
 	 *
 	 *	@param	Name	The MimeType key attribute of the instance generating the id.
 	 */
-	void deleteMimeTypeByUNameIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteMimeTypeByUNameIdx( ICFSecPubAuthorization Authorization,
 		String argName );
 
 	/**
@@ -107,7 +107,7 @@ public interface ICFIntPubMimeTypeTable
 	 *
 	 *	@param	argKey	The key identifying the instances to be deleted.
 	 */
-	void deleteMimeTypeByUNameIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteMimeTypeByUNameIdx( ICFSecPubAuthorization Authorization,
 		ICFIntPubMimeTypeByUNameIdxKey argKey );
 
 
@@ -121,7 +121,7 @@ public interface ICFIntPubMimeTypeTable
 	 *	@return The record instance for the specified primary key, or null if there is
 	 *		no such existing key value.
 	 */
-	ICFIntPubMimeType readDerived( ICFSecPubAuthorization Authorization,
+	public ICFIntPubMimeType pubreadDerived( ICFSecPubAuthorization Authorization,
 		Integer PKey );
 
 	/**
@@ -134,7 +134,7 @@ public interface ICFIntPubMimeTypeTable
 	 *	@return The record instance for the specified primary key, or null if there is
 	 *		no such existing key value.
 	 */
-	ICFIntPubMimeType lockDerived( ICFSecPubAuthorization Authorization,
+	public ICFIntPubMimeType publockDerived( ICFSecPubAuthorization Authorization,
 		Integer PKey );
 
 	/**
@@ -144,7 +144,7 @@ public interface ICFIntPubMimeTypeTable
 	 *
 	 *	@return An array of derived record instances, potentially with 0 elements in the set.
 	 */
-	ICFIntPubMimeType[] readPubAllDerived( ICFSecPubAuthorization Authorization );
+	public ICFIntPubMimeType[] pubreadPubAllDerived( ICFSecPubAuthorization Authorization );
 
 	/**
 	 *	Read the derived MimeType record instance identified by the unique key IdIdx.
@@ -156,7 +156,7 @@ public interface ICFIntPubMimeTypeTable
 	 *	@return The record instance for the specified key, or null if there is
 	 *		no such existing key value.
 	 */
-	ICFIntPubMimeType readDerivedByIdIdx( ICFSecPubAuthorization Authorization,
+	public ICFIntPubMimeType pubreadDerivedByIdIdx( ICFSecPubAuthorization Authorization,
 		int MimeTypeId );
 
 	/**
@@ -169,7 +169,7 @@ public interface ICFIntPubMimeTypeTable
 	 *	@return The record instance for the specified key, or null if there is
 	 *		no such existing key value.
 	 */
-	ICFIntPubMimeType readDerivedByUNameIdx( ICFSecPubAuthorization Authorization,
+	public ICFIntPubMimeType pubreadDerivedByUNameIdx( ICFSecPubAuthorization Authorization,
 		String Name );
 
 	/**
@@ -184,7 +184,7 @@ public interface ICFIntPubMimeTypeTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFIntPubMimeType readRec( ICFSecPubAuthorization Authorization,
+	public ICFIntPubMimeType pubreadRec( ICFSecPubAuthorization Authorization,
 		Integer PKey );
 
 	/**
@@ -199,7 +199,7 @@ public interface ICFIntPubMimeTypeTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFIntPubMimeType lockRec( ICFSecPubAuthorization Authorization,
+	public ICFIntPubMimeType publockRec( ICFSecPubAuthorization Authorization,
 		Integer PKey );
 
 	/**
@@ -209,7 +209,7 @@ public interface ICFIntPubMimeTypeTable
 	 *
 	 *	@return All the specific MimeType instances in the database accessible for the Authorization.
 	 */
-	ICFIntPubMimeType[] readAllRec( ICFSecPubAuthorization Authorization );
+	public ICFIntPubMimeType[] pubreadAllRec( ICFSecPubAuthorization Authorization );
 
 	/**
 	 *	Read the specific MimeType record instance identified by the unique key IdIdx.
@@ -223,7 +223,7 @@ public interface ICFIntPubMimeTypeTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFIntPubMimeType readRecByIdIdx( ICFSecPubAuthorization Authorization,
+	public ICFIntPubMimeType pubreadRecByIdIdx( ICFSecPubAuthorization Authorization,
 		int MimeTypeId );
 
 	/**
@@ -238,6 +238,6 @@ public interface ICFIntPubMimeTypeTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFIntPubMimeType readRecByUNameIdx( ICFSecPubAuthorization Authorization,
+	public ICFIntPubMimeType pubreadRecByUNameIdx( ICFSecPubAuthorization Authorization,
 		String Name );
 }

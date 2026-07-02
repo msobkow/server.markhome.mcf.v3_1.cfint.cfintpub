@@ -70,13 +70,13 @@ public interface ICFIntPubTldFactory
 	 *
 	 *	@return	The new instance.
 	 */
-	public ICFIntPubTld newRec();
+	public ICFIntPubTld newPubRec();
 
 	/**
 	 *	Allocate a public Tld history interface implementation.
 	 *
 	 *	@return	The new instance.
 	 */
-	public ICFIntPubTldH newHRec();
+	public ICFIntPubTldH newPubHRec();
 
 }

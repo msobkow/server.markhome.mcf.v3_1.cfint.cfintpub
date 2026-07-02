@@ -56,7 +56,7 @@ public interface ICFIntPubSubProjectTable
 	 *
 	 *	@param	rec	The instance interface to be created.
 	 */
-	ICFIntPubSubProject createSubProject( ICFSecPubAuthorization Authorization,
+	public ICFIntPubSubProject pubcreateSubProject( ICFSecPubAuthorization Authorization,
 		ICFIntPubSubProject rec );
 
 
@@ -68,7 +68,7 @@ public interface ICFIntPubSubProjectTable
 	 *
 	 *	@param	rec	The instance interface to be updated
 	 */
-	ICFIntPubSubProject updateSubProject( ICFSecPubAuthorization Authorization,
+	public ICFIntPubSubProject pubupdateSubProject( ICFSecPubAuthorization Authorization,
 		ICFIntPubSubProject rec );
 
 
@@ -79,7 +79,7 @@ public interface ICFIntPubSubProjectTable
 	 *
 	 *	@param	rec	The instance interface to be deleted.
 	 */
-	void deleteSubProject( ICFSecPubAuthorization Authorization,
+	public void pubdeleteSubProject( ICFSecPubAuthorization Authorization,
 		ICFIntPubSubProject rec );
 	/**
 	 *	Delete the SubProject instance identified by the primary key.
@@ -88,7 +88,7 @@ public interface ICFIntPubSubProjectTable
 	 *
 	 *	@param	argKey	The primary key identifying the instance to be deleted.
 	 */
-	void deleteSubProjectByIdIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteSubProjectByIdIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argKey );
 	/**
 	 *	Delete the SubProject instances identified by the key TenantIdx.
@@ -97,7 +97,7 @@ public interface ICFIntPubSubProjectTable
 	 *
 	 *	@param	TenantId	The SubProject key attribute of the instance generating the id.
 	 */
-	void deleteSubProjectByTenantIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteSubProjectByTenantIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argTenantId );
 
 	/**
@@ -107,7 +107,7 @@ public interface ICFIntPubSubProjectTable
 	 *
 	 *	@param	argKey	The key identifying the instances to be deleted.
 	 */
-	void deleteSubProjectByTenantIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteSubProjectByTenantIdx( ICFSecPubAuthorization Authorization,
 		ICFIntPubSubProjectByTenantIdxKey argKey );
 	/**
 	 *	Delete the SubProject instances identified by the key TopProjectIdx.
@@ -116,7 +116,7 @@ public interface ICFIntPubSubProjectTable
 	 *
 	 *	@param	TopProjectId	The SubProject key attribute of the instance generating the id.
 	 */
-	void deleteSubProjectByTopProjectIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteSubProjectByTopProjectIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argTopProjectId );
 
 	/**
@@ -126,7 +126,7 @@ public interface ICFIntPubSubProjectTable
 	 *
 	 *	@param	argKey	The key identifying the instances to be deleted.
 	 */
-	void deleteSubProjectByTopProjectIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteSubProjectByTopProjectIdx( ICFSecPubAuthorization Authorization,
 		ICFIntPubSubProjectByTopProjectIdxKey argKey );
 	/**
 	 *	Delete the SubProject instances identified by the key NameIdx.
@@ -137,7 +137,7 @@ public interface ICFIntPubSubProjectTable
 	 *
 	 *	@param	Name	The SubProject key attribute of the instance generating the id.
 	 */
-	void deleteSubProjectByNameIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteSubProjectByNameIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argTopProjectId,
 		String argName );
 
@@ -148,7 +148,7 @@ public interface ICFIntPubSubProjectTable
 	 *
 	 *	@param	argKey	The key identifying the instances to be deleted.
 	 */
-	void deleteSubProjectByNameIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteSubProjectByNameIdx( ICFSecPubAuthorization Authorization,
 		ICFIntPubSubProjectByNameIdxKey argKey );
 
 
@@ -162,7 +162,7 @@ public interface ICFIntPubSubProjectTable
 	 *	@return The record instance for the specified primary key, or null if there is
 	 *		no such existing key value.
 	 */
-	ICFIntPubSubProject readDerived( ICFSecPubAuthorization Authorization,
+	public ICFIntPubSubProject pubreadDerived( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 PKey );
 
 	/**
@@ -175,7 +175,7 @@ public interface ICFIntPubSubProjectTable
 	 *	@return The record instance for the specified primary key, or null if there is
 	 *		no such existing key value.
 	 */
-	ICFIntPubSubProject lockDerived( ICFSecPubAuthorization Authorization,
+	public ICFIntPubSubProject publockDerived( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 PKey );
 
 	/**
@@ -185,7 +185,7 @@ public interface ICFIntPubSubProjectTable
 	 *
 	 *	@return An array of derived record instances, potentially with 0 elements in the set.
 	 */
-	ICFIntPubSubProject[] readPubAllDerived( ICFSecPubAuthorization Authorization );
+	public ICFIntPubSubProject[] pubreadPubAllDerived( ICFSecPubAuthorization Authorization );
 
 	/**
 	 *	Read the derived SubProject record instance identified by the unique key IdIdx.
@@ -197,7 +197,7 @@ public interface ICFIntPubSubProjectTable
 	 *	@return The record instance for the specified key, or null if there is
 	 *		no such existing key value.
 	 */
-	ICFIntPubSubProject readDerivedByIdIdx( ICFSecPubAuthorization Authorization,
+	public ICFIntPubSubProject pubreadDerivedByIdIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 Id );
 
 	/**
@@ -209,7 +209,7 @@ public interface ICFIntPubSubProjectTable
 	 *
 	 *	@return An array of derived instances for the specified key, potentially with 0 elements in the set.
 	 */
-	ICFIntPubSubProject[] readDerivedByTenantIdx( ICFSecPubAuthorization Authorization,
+	public ICFIntPubSubProject[] pubreadDerivedByTenantIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 TenantId );
 
 	/**
@@ -221,7 +221,7 @@ public interface ICFIntPubSubProjectTable
 	 *
 	 *	@return An array of derived instances for the specified key, potentially with 0 elements in the set.
 	 */
-	ICFIntPubSubProject[] readDerivedByTopProjectIdx( ICFSecPubAuthorization Authorization,
+	public ICFIntPubSubProject[] pubreadDerivedByTopProjectIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 TopProjectId );
 
 	/**
@@ -236,7 +236,7 @@ public interface ICFIntPubSubProjectTable
 	 *	@return The record instance for the specified key, or null if there is
 	 *		no such existing key value.
 	 */
-	ICFIntPubSubProject readDerivedByNameIdx( ICFSecPubAuthorization Authorization,
+	public ICFIntPubSubProject pubreadDerivedByNameIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 TopProjectId,
 		String Name );
 
@@ -252,7 +252,7 @@ public interface ICFIntPubSubProjectTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFIntPubSubProject readRec( ICFSecPubAuthorization Authorization,
+	public ICFIntPubSubProject pubreadRec( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 PKey );
 
 	/**
@@ -267,7 +267,7 @@ public interface ICFIntPubSubProjectTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFIntPubSubProject lockRec( ICFSecPubAuthorization Authorization,
+	public ICFIntPubSubProject publockRec( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 PKey );
 
 	/**
@@ -277,7 +277,7 @@ public interface ICFIntPubSubProjectTable
 	 *
 	 *	@return All the specific SubProject instances in the database accessible for the Authorization.
 	 */
-	ICFIntPubSubProject[] readAllRec( ICFSecPubAuthorization Authorization );
+	public ICFIntPubSubProject[] pubreadAllRec( ICFSecPubAuthorization Authorization );
 
 	/**
 	 *	Read the specific SubProject record instance identified by the unique key IdIdx.
@@ -291,7 +291,7 @@ public interface ICFIntPubSubProjectTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFIntPubSubProject readRecByIdIdx( ICFSecPubAuthorization Authorization,
+	public ICFIntPubSubProject pubreadRecByIdIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 Id );
 
 	/**
@@ -305,7 +305,7 @@ public interface ICFIntPubSubProjectTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFIntPubSubProject[] readRecByTenantIdx( ICFSecPubAuthorization Authorization,
+	public ICFIntPubSubProject[] pubreadRecByTenantIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 TenantId );
 
 	/**
@@ -319,7 +319,7 @@ public interface ICFIntPubSubProjectTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFIntPubSubProject[] readRecByTopProjectIdx( ICFSecPubAuthorization Authorization,
+	public ICFIntPubSubProject[] pubreadRecByTopProjectIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 TopProjectId );
 
 	/**
@@ -336,7 +336,7 @@ public interface ICFIntPubSubProjectTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFIntPubSubProject readRecByNameIdx( ICFSecPubAuthorization Authorization,
+	public ICFIntPubSubProject pubreadRecByNameIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 TopProjectId,
 		String Name );
 }

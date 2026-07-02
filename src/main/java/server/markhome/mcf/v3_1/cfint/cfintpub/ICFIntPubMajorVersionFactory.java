@@ -77,13 +77,13 @@ public interface ICFIntPubMajorVersionFactory
 	 *
 	 *	@return	The new instance.
 	 */
-	public ICFIntPubMajorVersion newRec();
+	public ICFIntPubMajorVersion newPubRec();
 
 	/**
 	 *	Allocate a public MajorVersion history interface implementation.
 	 *
 	 *	@return	The new instance.
 	 */
-	public ICFIntPubMajorVersionH newHRec();
+	public ICFIntPubMajorVersionH newPubHRec();
 
 }

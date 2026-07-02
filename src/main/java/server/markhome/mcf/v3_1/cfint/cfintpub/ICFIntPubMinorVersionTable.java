@@ -56,7 +56,7 @@ public interface ICFIntPubMinorVersionTable
 	 *
 	 *	@param	rec	The instance interface to be created.
 	 */
-	ICFIntPubMinorVersion createMinorVersion( ICFSecPubAuthorization Authorization,
+	public ICFIntPubMinorVersion pubcreateMinorVersion( ICFSecPubAuthorization Authorization,
 		ICFIntPubMinorVersion rec );
 
 
@@ -68,7 +68,7 @@ public interface ICFIntPubMinorVersionTable
 	 *
 	 *	@param	rec	The instance interface to be updated
 	 */
-	ICFIntPubMinorVersion updateMinorVersion( ICFSecPubAuthorization Authorization,
+	public ICFIntPubMinorVersion pubupdateMinorVersion( ICFSecPubAuthorization Authorization,
 		ICFIntPubMinorVersion rec );
 
 
@@ -79,7 +79,7 @@ public interface ICFIntPubMinorVersionTable
 	 *
 	 *	@param	rec	The instance interface to be deleted.
 	 */
-	void deleteMinorVersion( ICFSecPubAuthorization Authorization,
+	public void pubdeleteMinorVersion( ICFSecPubAuthorization Authorization,
 		ICFIntPubMinorVersion rec );
 	/**
 	 *	Delete the MinorVersion instance identified by the primary key.
@@ -88,7 +88,7 @@ public interface ICFIntPubMinorVersionTable
 	 *
 	 *	@param	argKey	The primary key identifying the instance to be deleted.
 	 */
-	void deleteMinorVersionByIdIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteMinorVersionByIdIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argKey );
 	/**
 	 *	Delete the MinorVersion instances identified by the key TenantIdx.
@@ -97,7 +97,7 @@ public interface ICFIntPubMinorVersionTable
 	 *
 	 *	@param	TenantId	The MinorVersion key attribute of the instance generating the id.
 	 */
-	void deleteMinorVersionByTenantIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteMinorVersionByTenantIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argTenantId );
 
 	/**
@@ -107,7 +107,7 @@ public interface ICFIntPubMinorVersionTable
 	 *
 	 *	@param	argKey	The key identifying the instances to be deleted.
 	 */
-	void deleteMinorVersionByTenantIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteMinorVersionByTenantIdx( ICFSecPubAuthorization Authorization,
 		ICFIntPubMinorVersionByTenantIdxKey argKey );
 	/**
 	 *	Delete the MinorVersion instances identified by the key MajorVerIdx.
@@ -116,7 +116,7 @@ public interface ICFIntPubMinorVersionTable
 	 *
 	 *	@param	MajorVersionId	The MinorVersion key attribute of the instance generating the id.
 	 */
-	void deleteMinorVersionByMajorVerIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteMinorVersionByMajorVerIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argMajorVersionId );
 
 	/**
@@ -126,7 +126,7 @@ public interface ICFIntPubMinorVersionTable
 	 *
 	 *	@param	argKey	The key identifying the instances to be deleted.
 	 */
-	void deleteMinorVersionByMajorVerIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteMinorVersionByMajorVerIdx( ICFSecPubAuthorization Authorization,
 		ICFIntPubMinorVersionByMajorVerIdxKey argKey );
 	/**
 	 *	Delete the MinorVersion instances identified by the key NameIdx.
@@ -137,7 +137,7 @@ public interface ICFIntPubMinorVersionTable
 	 *
 	 *	@param	Name	The MinorVersion key attribute of the instance generating the id.
 	 */
-	void deleteMinorVersionByNameIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteMinorVersionByNameIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argMajorVersionId,
 		String argName );
 
@@ -148,7 +148,7 @@ public interface ICFIntPubMinorVersionTable
 	 *
 	 *	@param	argKey	The key identifying the instances to be deleted.
 	 */
-	void deleteMinorVersionByNameIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteMinorVersionByNameIdx( ICFSecPubAuthorization Authorization,
 		ICFIntPubMinorVersionByNameIdxKey argKey );
 
 
@@ -162,7 +162,7 @@ public interface ICFIntPubMinorVersionTable
 	 *	@return The record instance for the specified primary key, or null if there is
 	 *		no such existing key value.
 	 */
-	ICFIntPubMinorVersion readDerived( ICFSecPubAuthorization Authorization,
+	public ICFIntPubMinorVersion pubreadDerived( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 PKey );
 
 	/**
@@ -175,7 +175,7 @@ public interface ICFIntPubMinorVersionTable
 	 *	@return The record instance for the specified primary key, or null if there is
 	 *		no such existing key value.
 	 */
-	ICFIntPubMinorVersion lockDerived( ICFSecPubAuthorization Authorization,
+	public ICFIntPubMinorVersion publockDerived( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 PKey );
 
 	/**
@@ -185,7 +185,7 @@ public interface ICFIntPubMinorVersionTable
 	 *
 	 *	@return An array of derived record instances, potentially with 0 elements in the set.
 	 */
-	ICFIntPubMinorVersion[] readPubAllDerived( ICFSecPubAuthorization Authorization );
+	public ICFIntPubMinorVersion[] pubreadPubAllDerived( ICFSecPubAuthorization Authorization );
 
 	/**
 	 *	Read the derived MinorVersion record instance identified by the unique key IdIdx.
@@ -197,7 +197,7 @@ public interface ICFIntPubMinorVersionTable
 	 *	@return The record instance for the specified key, or null if there is
 	 *		no such existing key value.
 	 */
-	ICFIntPubMinorVersion readDerivedByIdIdx( ICFSecPubAuthorization Authorization,
+	public ICFIntPubMinorVersion pubreadDerivedByIdIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 Id );
 
 	/**
@@ -209,7 +209,7 @@ public interface ICFIntPubMinorVersionTable
 	 *
 	 *	@return An array of derived instances for the specified key, potentially with 0 elements in the set.
 	 */
-	ICFIntPubMinorVersion[] readDerivedByTenantIdx( ICFSecPubAuthorization Authorization,
+	public ICFIntPubMinorVersion[] pubreadDerivedByTenantIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 TenantId );
 
 	/**
@@ -221,7 +221,7 @@ public interface ICFIntPubMinorVersionTable
 	 *
 	 *	@return An array of derived instances for the specified key, potentially with 0 elements in the set.
 	 */
-	ICFIntPubMinorVersion[] readDerivedByMajorVerIdx( ICFSecPubAuthorization Authorization,
+	public ICFIntPubMinorVersion[] pubreadDerivedByMajorVerIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 MajorVersionId );
 
 	/**
@@ -236,7 +236,7 @@ public interface ICFIntPubMinorVersionTable
 	 *	@return The record instance for the specified key, or null if there is
 	 *		no such existing key value.
 	 */
-	ICFIntPubMinorVersion readDerivedByNameIdx( ICFSecPubAuthorization Authorization,
+	public ICFIntPubMinorVersion pubreadDerivedByNameIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 MajorVersionId,
 		String Name );
 
@@ -252,7 +252,7 @@ public interface ICFIntPubMinorVersionTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFIntPubMinorVersion readRec( ICFSecPubAuthorization Authorization,
+	public ICFIntPubMinorVersion pubreadRec( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 PKey );
 
 	/**
@@ -267,7 +267,7 @@ public interface ICFIntPubMinorVersionTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFIntPubMinorVersion lockRec( ICFSecPubAuthorization Authorization,
+	public ICFIntPubMinorVersion publockRec( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 PKey );
 
 	/**
@@ -277,7 +277,7 @@ public interface ICFIntPubMinorVersionTable
 	 *
 	 *	@return All the specific MinorVersion instances in the database accessible for the Authorization.
 	 */
-	ICFIntPubMinorVersion[] readAllRec( ICFSecPubAuthorization Authorization );
+	public ICFIntPubMinorVersion[] pubreadAllRec( ICFSecPubAuthorization Authorization );
 
 	/**
 	 *	Read the specific MinorVersion record instance identified by the unique key IdIdx.
@@ -291,7 +291,7 @@ public interface ICFIntPubMinorVersionTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFIntPubMinorVersion readRecByIdIdx( ICFSecPubAuthorization Authorization,
+	public ICFIntPubMinorVersion pubreadRecByIdIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 Id );
 
 	/**
@@ -305,7 +305,7 @@ public interface ICFIntPubMinorVersionTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFIntPubMinorVersion[] readRecByTenantIdx( ICFSecPubAuthorization Authorization,
+	public ICFIntPubMinorVersion[] pubreadRecByTenantIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 TenantId );
 
 	/**
@@ -319,7 +319,7 @@ public interface ICFIntPubMinorVersionTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFIntPubMinorVersion[] readRecByMajorVerIdx( ICFSecPubAuthorization Authorization,
+	public ICFIntPubMinorVersion[] pubreadRecByMajorVerIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 MajorVersionId );
 
 	/**
@@ -336,7 +336,7 @@ public interface ICFIntPubMinorVersionTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFIntPubMinorVersion readRecByNameIdx( ICFSecPubAuthorization Authorization,
+	public ICFIntPubMinorVersion pubreadRecByNameIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 MajorVersionId,
 		String Name );
 }

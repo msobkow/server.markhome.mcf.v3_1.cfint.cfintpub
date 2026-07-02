@@ -56,7 +56,7 @@ public interface ICFIntPubLicenseTable
 	 *
 	 *	@param	rec	The instance interface to be created.
 	 */
-	ICFIntPubLicense createLicense( ICFSecPubAuthorization Authorization,
+	public ICFIntPubLicense pubcreateLicense( ICFSecPubAuthorization Authorization,
 		ICFIntPubLicense rec );
 
 
@@ -68,7 +68,7 @@ public interface ICFIntPubLicenseTable
 	 *
 	 *	@param	rec	The instance interface to be updated
 	 */
-	ICFIntPubLicense updateLicense( ICFSecPubAuthorization Authorization,
+	public ICFIntPubLicense pubupdateLicense( ICFSecPubAuthorization Authorization,
 		ICFIntPubLicense rec );
 
 
@@ -79,7 +79,7 @@ public interface ICFIntPubLicenseTable
 	 *
 	 *	@param	rec	The instance interface to be deleted.
 	 */
-	void deleteLicense( ICFSecPubAuthorization Authorization,
+	public void pubdeleteLicense( ICFSecPubAuthorization Authorization,
 		ICFIntPubLicense rec );
 	/**
 	 *	Delete the License instance identified by the primary key.
@@ -88,7 +88,7 @@ public interface ICFIntPubLicenseTable
 	 *
 	 *	@param	argKey	The primary key identifying the instance to be deleted.
 	 */
-	void deleteLicenseByIdIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteLicenseByIdIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argKey );
 	/**
 	 *	Delete the License instances identified by the key LicnTenantIdx.
@@ -97,7 +97,7 @@ public interface ICFIntPubLicenseTable
 	 *
 	 *	@param	TenantId	The License key attribute of the instance generating the id.
 	 */
-	void deleteLicenseByLicnTenantIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteLicenseByLicnTenantIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argTenantId );
 
 	/**
@@ -107,7 +107,7 @@ public interface ICFIntPubLicenseTable
 	 *
 	 *	@param	argKey	The key identifying the instances to be deleted.
 	 */
-	void deleteLicenseByLicnTenantIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteLicenseByLicnTenantIdx( ICFSecPubAuthorization Authorization,
 		ICFIntPubLicenseByLicnTenantIdxKey argKey );
 	/**
 	 *	Delete the License instances identified by the key DomainIdx.
@@ -116,7 +116,7 @@ public interface ICFIntPubLicenseTable
 	 *
 	 *	@param	TopDomainId	The License key attribute of the instance generating the id.
 	 */
-	void deleteLicenseByDomainIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteLicenseByDomainIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argTopDomainId );
 
 	/**
@@ -126,7 +126,7 @@ public interface ICFIntPubLicenseTable
 	 *
 	 *	@param	argKey	The key identifying the instances to be deleted.
 	 */
-	void deleteLicenseByDomainIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteLicenseByDomainIdx( ICFSecPubAuthorization Authorization,
 		ICFIntPubLicenseByDomainIdxKey argKey );
 	/**
 	 *	Delete the License instances identified by the key UNameIdx.
@@ -137,7 +137,7 @@ public interface ICFIntPubLicenseTable
 	 *
 	 *	@param	Name	The License key attribute of the instance generating the id.
 	 */
-	void deleteLicenseByUNameIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteLicenseByUNameIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argTopDomainId,
 		String argName );
 
@@ -148,7 +148,7 @@ public interface ICFIntPubLicenseTable
 	 *
 	 *	@param	argKey	The key identifying the instances to be deleted.
 	 */
-	void deleteLicenseByUNameIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteLicenseByUNameIdx( ICFSecPubAuthorization Authorization,
 		ICFIntPubLicenseByUNameIdxKey argKey );
 
 
@@ -162,7 +162,7 @@ public interface ICFIntPubLicenseTable
 	 *	@return The record instance for the specified primary key, or null if there is
 	 *		no such existing key value.
 	 */
-	ICFIntPubLicense readDerived( ICFSecPubAuthorization Authorization,
+	public ICFIntPubLicense pubreadDerived( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 PKey );
 
 	/**
@@ -175,7 +175,7 @@ public interface ICFIntPubLicenseTable
 	 *	@return The record instance for the specified primary key, or null if there is
 	 *		no such existing key value.
 	 */
-	ICFIntPubLicense lockDerived( ICFSecPubAuthorization Authorization,
+	public ICFIntPubLicense publockDerived( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 PKey );
 
 	/**
@@ -185,7 +185,7 @@ public interface ICFIntPubLicenseTable
 	 *
 	 *	@return An array of derived record instances, potentially with 0 elements in the set.
 	 */
-	ICFIntPubLicense[] readPubAllDerived( ICFSecPubAuthorization Authorization );
+	public ICFIntPubLicense[] pubreadPubAllDerived( ICFSecPubAuthorization Authorization );
 
 	/**
 	 *	Read the derived License record instance identified by the unique key IdIdx.
@@ -197,7 +197,7 @@ public interface ICFIntPubLicenseTable
 	 *	@return The record instance for the specified key, or null if there is
 	 *		no such existing key value.
 	 */
-	ICFIntPubLicense readDerivedByIdIdx( ICFSecPubAuthorization Authorization,
+	public ICFIntPubLicense pubreadDerivedByIdIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 Id );
 
 	/**
@@ -209,7 +209,7 @@ public interface ICFIntPubLicenseTable
 	 *
 	 *	@return An array of derived instances for the specified key, potentially with 0 elements in the set.
 	 */
-	ICFIntPubLicense[] readDerivedByLicnTenantIdx( ICFSecPubAuthorization Authorization,
+	public ICFIntPubLicense[] pubreadDerivedByLicnTenantIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 TenantId );
 
 	/**
@@ -221,7 +221,7 @@ public interface ICFIntPubLicenseTable
 	 *
 	 *	@return An array of derived instances for the specified key, potentially with 0 elements in the set.
 	 */
-	ICFIntPubLicense[] readDerivedByDomainIdx( ICFSecPubAuthorization Authorization,
+	public ICFIntPubLicense[] pubreadDerivedByDomainIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 TopDomainId );
 
 	/**
@@ -236,7 +236,7 @@ public interface ICFIntPubLicenseTable
 	 *	@return The record instance for the specified key, or null if there is
 	 *		no such existing key value.
 	 */
-	ICFIntPubLicense readDerivedByUNameIdx( ICFSecPubAuthorization Authorization,
+	public ICFIntPubLicense pubreadDerivedByUNameIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 TopDomainId,
 		String Name );
 
@@ -252,7 +252,7 @@ public interface ICFIntPubLicenseTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFIntPubLicense readRec( ICFSecPubAuthorization Authorization,
+	public ICFIntPubLicense pubreadRec( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 PKey );
 
 	/**
@@ -267,7 +267,7 @@ public interface ICFIntPubLicenseTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFIntPubLicense lockRec( ICFSecPubAuthorization Authorization,
+	public ICFIntPubLicense publockRec( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 PKey );
 
 	/**
@@ -277,7 +277,7 @@ public interface ICFIntPubLicenseTable
 	 *
 	 *	@return All the specific License instances in the database accessible for the Authorization.
 	 */
-	ICFIntPubLicense[] readAllRec( ICFSecPubAuthorization Authorization );
+	public ICFIntPubLicense[] pubreadAllRec( ICFSecPubAuthorization Authorization );
 
 	/**
 	 *	Read the specific License record instance identified by the unique key IdIdx.
@@ -291,7 +291,7 @@ public interface ICFIntPubLicenseTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFIntPubLicense readRecByIdIdx( ICFSecPubAuthorization Authorization,
+	public ICFIntPubLicense pubreadRecByIdIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 Id );
 
 	/**
@@ -305,7 +305,7 @@ public interface ICFIntPubLicenseTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFIntPubLicense[] readRecByLicnTenantIdx( ICFSecPubAuthorization Authorization,
+	public ICFIntPubLicense[] pubreadRecByLicnTenantIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 TenantId );
 
 	/**
@@ -319,7 +319,7 @@ public interface ICFIntPubLicenseTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFIntPubLicense[] readRecByDomainIdx( ICFSecPubAuthorization Authorization,
+	public ICFIntPubLicense[] pubreadRecByDomainIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 TopDomainId );
 
 	/**
@@ -336,7 +336,7 @@ public interface ICFIntPubLicenseTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFIntPubLicense readRecByUNameIdx( ICFSecPubAuthorization Authorization,
+	public ICFIntPubLicense pubreadRecByUNameIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 TopDomainId,
 		String Name );
 }

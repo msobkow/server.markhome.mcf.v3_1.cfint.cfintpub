@@ -77,13 +77,13 @@ public interface ICFIntPubMinorVersionFactory
 	 *
 	 *	@return	The new instance.
 	 */
-	public ICFIntPubMinorVersion newRec();
+	public ICFIntPubMinorVersion newPubRec();
 
 	/**
 	 *	Allocate a public MinorVersion history interface implementation.
 	 *
 	 *	@return	The new instance.
 	 */
-	public ICFIntPubMinorVersionH newHRec();
+	public ICFIntPubMinorVersionH newPubHRec();
 
 }

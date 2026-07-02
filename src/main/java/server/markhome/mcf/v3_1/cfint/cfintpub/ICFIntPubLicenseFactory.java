@@ -77,13 +77,13 @@ public interface ICFIntPubLicenseFactory
 	 *
 	 *	@return	The new instance.
 	 */
-	public ICFIntPubLicense newRec();
+	public ICFIntPubLicense newPubRec();
 
 	/**
 	 *	Allocate a public License history interface implementation.
 	 *
 	 *	@return	The new instance.
 	 */
-	public ICFIntPubLicenseH newHRec();
+	public ICFIntPubLicenseH newPubHRec();
 
 }

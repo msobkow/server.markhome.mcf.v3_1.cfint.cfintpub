@@ -63,13 +63,13 @@ public interface ICFIntPubMimeTypeFactory
 	 *
 	 *	@return	The new instance.
 	 */
-	public ICFIntPubMimeType newRec();
+	public ICFIntPubMimeType newPubRec();
 
 	/**
 	 *	Allocate a public MimeType history interface implementation.
 	 *
 	 *	@return	The new instance.
 	 */
-	public ICFIntPubMimeTypeH newHRec();
+	public ICFIntPubMimeTypeH newPubHRec();
 
 }

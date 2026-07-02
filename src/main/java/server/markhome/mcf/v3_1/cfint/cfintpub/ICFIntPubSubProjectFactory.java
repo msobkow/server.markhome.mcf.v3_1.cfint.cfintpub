@@ -77,13 +77,13 @@ public interface ICFIntPubSubProjectFactory
 	 *
 	 *	@return	The new instance.
 	 */
-	public ICFIntPubSubProject newRec();
+	public ICFIntPubSubProject newPubRec();
 
 	/**
 	 *	Allocate a public SubProject history interface implementation.
 	 *
 	 *	@return	The new instance.
 	 */
-	public ICFIntPubSubProjectH newHRec();
+	public ICFIntPubSubProjectH newPubHRec();
 
 }
