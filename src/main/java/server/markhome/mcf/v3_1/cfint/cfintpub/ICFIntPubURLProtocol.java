@@ -65,8 +65,8 @@ public interface ICFIntPubURLProtocol
 	public LocalDateTime getUpdatedAt();
 	public void setUpdatedAt( LocalDateTime value );
 
-	public Integer getPubPKey();
-	public void setPubPKey(Integer requiredURLProtocolId);
+	public Integer getPKey();
+	public void setPKey(Integer requiredURLProtocolId);
 	
 	public int getRequiredURLProtocolId();
 	public void setRequiredURLProtocolId( int value );
@@ -89,9 +89,9 @@ public interface ICFIntPubURLProtocol
 	public int compareTo( Object obj );
 
 	public void set( ICFIntPubURLProtocol src );
-	public void setPubURLProtocol( ICFIntPubURLProtocol src );
+	public void setURLProtocol( ICFIntPubURLProtocol src );
 	public void set( ICFIntPubURLProtocolH src );
-	public void setPubURLProtocol( ICFIntPubURLProtocolH src );
+	public void setURLProtocol( ICFIntPubURLProtocolH src );
 
 	public String getXmlAttrFragment();
 

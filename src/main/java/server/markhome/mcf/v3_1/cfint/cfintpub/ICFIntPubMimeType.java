@@ -64,8 +64,8 @@ public interface ICFIntPubMimeType
 	public LocalDateTime getUpdatedAt();
 	public void setUpdatedAt( LocalDateTime value );
 
-	public Integer getPubPKey();
-	public void setPubPKey(Integer requiredMimeTypeId);
+	public Integer getPKey();
+	public void setPKey(Integer requiredMimeTypeId);
 	
 	public int getRequiredMimeTypeId();
 	public void setRequiredMimeTypeId( int value );
@@ -86,9 +86,9 @@ public interface ICFIntPubMimeType
 	public int compareTo( Object obj );
 
 	public void set( ICFIntPubMimeType src );
-	public void setPubMimeType( ICFIntPubMimeType src );
+	public void setMimeType( ICFIntPubMimeType src );
 	public void set( ICFIntPubMimeTypeH src );
-	public void setPubMimeType( ICFIntPubMimeTypeH src );
+	public void setMimeType( ICFIntPubMimeTypeH src );
 
 	public String getXmlAttrFragment();
 

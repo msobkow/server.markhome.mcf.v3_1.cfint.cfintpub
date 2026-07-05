@@ -68,8 +68,8 @@ public interface ICFIntPubSubProject
 	public LocalDateTime getUpdatedAt();
 	public void setUpdatedAt( LocalDateTime value );
 
-	public CFLibDbKeyHash256 getPubPKey();
-	public void setPubPKey(CFLibDbKeyHash256 requiredId);
+	public CFLibDbKeyHash256 getPKey();
+	public void setPKey(CFLibDbKeyHash256 requiredId);
 	
 	public List<ICFIntPubMajorVersion> getOptionalComponentsMajorVer();
 	public CFLibDbKeyHash256 getRequiredId();
@@ -99,9 +99,9 @@ public interface ICFIntPubSubProject
 	public int compareTo( Object obj );
 
 	public void set( ICFIntPubSubProject src );
-	public void setPubSubProject( ICFIntPubSubProject src );
+	public void setSubProject( ICFIntPubSubProject src );
 	public void set( ICFIntPubSubProjectH src );
-	public void setPubSubProject( ICFIntPubSubProjectH src );
+	public void setSubProject( ICFIntPubSubProjectH src );
 
 	public String getXmlAttrFragment();
 

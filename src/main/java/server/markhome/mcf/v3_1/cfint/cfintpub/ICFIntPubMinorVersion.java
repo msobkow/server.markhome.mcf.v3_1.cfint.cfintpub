@@ -68,8 +68,8 @@ public interface ICFIntPubMinorVersion
 	public LocalDateTime getUpdatedAt();
 	public void setUpdatedAt( LocalDateTime value );
 
-	public CFLibDbKeyHash256 getPubPKey();
-	public void setPubPKey(CFLibDbKeyHash256 requiredId);
+	public CFLibDbKeyHash256 getPKey();
+	public void setPKey(CFLibDbKeyHash256 requiredId);
 	
 	public CFLibDbKeyHash256 getRequiredId();
 	public void setRequiredId( CFLibDbKeyHash256 value );
@@ -98,9 +98,9 @@ public interface ICFIntPubMinorVersion
 	public int compareTo( Object obj );
 
 	public void set( ICFIntPubMinorVersion src );
-	public void setPubMinorVersion( ICFIntPubMinorVersion src );
+	public void setMinorVersion( ICFIntPubMinorVersion src );
 	public void set( ICFIntPubMinorVersionH src );
-	public void setPubMinorVersion( ICFIntPubMinorVersionH src );
+	public void setMinorVersion( ICFIntPubMinorVersionH src );
 
 	public String getXmlAttrFragment();
 

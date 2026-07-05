@@ -57,8 +57,8 @@ public interface ICFIntPubLicense
 
 	public int getClassCode();
 
-	public CFLibDbKeyHash256 getPubPKey();
-	public void setPubPKey(CFLibDbKeyHash256 requiredId);
+	public CFLibDbKeyHash256 getPKey();
+	public void setPKey(CFLibDbKeyHash256 requiredId);
 	
 	public CFLibDbKeyHash256 getRequiredId();
 	public void setRequiredId( CFLibDbKeyHash256 value );
@@ -91,9 +91,9 @@ public interface ICFIntPubLicense
 	public int compareTo( Object obj );
 
 	public void set( ICFIntPubLicense src );
-	public void setPubLicense( ICFIntPubLicense src );
+	public void setLicense( ICFIntPubLicense src );
 	public void set( ICFIntPubLicenseH src );
-	public void setPubLicense( ICFIntPubLicenseH src );
+	public void setLicense( ICFIntPubLicenseH src );
 
 	public String getXmlAttrFragment();
 

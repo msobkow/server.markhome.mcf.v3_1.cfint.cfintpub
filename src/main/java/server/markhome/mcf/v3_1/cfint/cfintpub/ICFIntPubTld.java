@@ -66,8 +66,8 @@ public interface ICFIntPubTld
 	public LocalDateTime getUpdatedAt();
 	public void setUpdatedAt( LocalDateTime value );
 
-	public CFLibDbKeyHash256 getPubPKey();
-	public void setPubPKey(CFLibDbKeyHash256 requiredId);
+	public CFLibDbKeyHash256 getPKey();
+	public void setPKey(CFLibDbKeyHash256 requiredId);
 	
 	public List<ICFIntPubTopDomain> getOptionalComponentsTopDomain();
 	public CFLibDbKeyHash256 getRequiredId();
@@ -93,9 +93,9 @@ public interface ICFIntPubTld
 	public int compareTo( Object obj );
 
 	public void set( ICFIntPubTld src );
-	public void setPubTld( ICFIntPubTld src );
+	public void setTld( ICFIntPubTld src );
 	public void set( ICFIntPubTldH src );
-	public void setPubTld( ICFIntPubTldH src );
+	public void setTld( ICFIntPubTldH src );
 
 	public String getXmlAttrFragment();
 
