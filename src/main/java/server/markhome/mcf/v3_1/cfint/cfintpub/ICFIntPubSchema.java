@@ -47,7 +47,7 @@ import server.markhome.mcf.v3_1.cfsec.cfsecpub.*;
 //import server.markhome.mcf.v3_1.cfint.cfintpub.buff.CFIntPubBuffFactoryService;
 
 public interface ICFIntPubSchema
-extends IcfsecpubSchema
+extends ICFSecPubSchema
 {
 
 	public static final String SCHEMA_NAME = "CFInt";
