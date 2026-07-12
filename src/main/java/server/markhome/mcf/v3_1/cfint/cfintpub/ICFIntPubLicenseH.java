@@ -68,6 +68,10 @@ public interface ICFIntPubLicenseH
 	public void setRequiredName( String value );
 	public String getOptionalDescription();
 	public void setOptionalDescription( String value );
+	public String getOptionalEmbeddedText();
+	public void setOptionalEmbeddedText( String value );
+	public String getOptionalFullText();
+	public void setOptionalFullText( String value );
 	@Override
 	public boolean equals( Object obj );
 

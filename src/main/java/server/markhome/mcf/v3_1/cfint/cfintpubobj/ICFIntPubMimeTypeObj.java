@@ -220,6 +220,20 @@ public interface ICFIntPubMimeTypeObj
 	int getRequiredMimeTypeId();
 
 	/**
+	 *	Get the required String attribute Name.
+	 *
+	 *	@return	The required String attribute Name.
+	 */
+	String getRequiredName();
+
+	/**
+	 *	Get the optional String attribute FileTypes.
+	 *
+	 *	@return	The optional String attribute FileTypes.
+	 */
+	String getOptionalFileTypes();
+
+	/**
 	 *	Internal use only.
 	 */
 	void copyPKeyToRec();

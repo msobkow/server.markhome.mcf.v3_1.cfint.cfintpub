@@ -1,5 +1,4 @@
-
-// Description: Java Public Factory interface for MimeType.
+// Description: Java 25 public interface for a URLProtocol by UNameIdx index key object
 
 /*
  *	server.markhome.mcf.CFInt
@@ -26,50 +25,36 @@
 
 package server.markhome.mcf.v3_1.cfint.cfintpub;
 
-import java.lang.reflect.*;
-import java.net.*;
-import java.rmi.*;
-import java.sql.*;
-import java.text.*;
+import java.io.Serializable;
+import java.math.*;
+import java.time.*;
 import java.util.*;
 import org.apache.commons.codec.binary.Base64;
 import org.apache.commons.text.StringEscapeUtils;
 import server.markhome.mcf.v3_1.cflib.*;
 import server.markhome.mcf.v3_1.cflib.dbutil.*;
+import server.markhome.mcf.v3_1.cflib.xml.CFLibXmlUtil;
 import server.markhome.mcf.v3_1.cfsec.cfsecpub.*;
+//import server.markhome.mcf.v3_1.cfint.cfintpub.*;
 
-/*
- *	ICFIntPubMimeTypeFactory public interface for MimeType
+/**
+ *	ICFIntPubURLProtocolByUNameIdxKeys has CodeVis Public, meaning that any user interface or referencing schema can access it.
  */
-public interface ICFIntPubMimeTypeFactory
+public interface ICFIntPubURLProtocolByUNameIdxKey
 {
+	public String getRequiredName();
+	public void setRequiredName( String value );
+	@Override
+	public boolean equals( Object obj );
 
-	/**
-	 *	Allocate a public primary history key for MimeType instances.
-	 *
-	 *	@return	The new instance.
-	 */
-	ICFIntPubMimeTypeHPKey newPubHPKey();
+	@Override
+	public int hashCode();
 
-	/**
-	 *	Allocate a public UNameIdx key over public MimeType instances.
-	 *
-	 *	@return	The new instance.
-	 */
-	public ICFIntPubMimeTypeByUNameIdxKey newPubByUNameIdxKey();
+	//@Override
+	public int compareTo( Object obj );
 
-	/**
-	 *	Allocate a public MimeType interface implementation.
-	 *
-	 *	@return	The new instance.
-	 */
-	public ICFIntPubMimeType newPubRec();
+	public String getXmlAttrFragment();
 
-	/**
-	 *	Allocate a public MimeType history interface implementation.
-	 *
-	 *	@return	The new instance.
-	 */
-	public ICFIntPubMimeTypeH newPubHRec();
-
+	@Override
+	public String toString();
 }

@@ -52,6 +52,20 @@ public interface ICFIntPubURLProtocolFactory
 	ICFIntPubURLProtocolHPKey newPubHPKey();
 
 	/**
+	 *	Allocate a public UNameIdx key over public URLProtocol instances.
+	 *
+	 *	@return	The new instance.
+	 */
+	public ICFIntPubURLProtocolByUNameIdxKey newPubByUNameIdxKey();
+
+	/**
+	 *	Allocate a public IsSecureIdx key over public URLProtocol instances.
+	 *
+	 *	@return	The new instance.
+	 */
+	public ICFIntPubURLProtocolByIsSecureIdxKey newPubByIsSecureIdxKey();
+
+	/**
 	 *	Allocate a public URLProtocol interface implementation.
 	 *
 	 *	@return	The new instance.

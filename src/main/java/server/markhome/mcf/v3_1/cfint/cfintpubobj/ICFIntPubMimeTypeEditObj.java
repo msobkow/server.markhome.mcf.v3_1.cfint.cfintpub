@@ -118,6 +118,34 @@ public interface ICFIntPubMimeTypeEditObj
 	 */
 	void setRequiredMimeTypeId(int value);
 
+	/**
+	 *	Get the required String attribute Name.
+	 *
+	 *	@return	The required String attribute Name.
+	 */
+	String getRequiredName();
+
+	/**
+	 *	Set the required String attribute Name.
+	 *
+	 *	@param value The required String attribute Name value to be applied.
+	 */
+	void setRequiredName(String value);
+
+	/**
+	 *	Get the optional String attribute FileTypes.
+	 *
+	 *	@return	The optional String attribute FileTypes.
+	 */
+	String getOptionalFileTypes();
+
+	/**
+	 *	Set the optional String attribute FileTypes.
+	 *
+	 *	@param value The optional String attribute FileTypes value to be applied.
+	 */
+	void setOptionalFileTypes(String value);
+
 	public void copyRecToOrig();
 	public void copyOrigToRec();
 

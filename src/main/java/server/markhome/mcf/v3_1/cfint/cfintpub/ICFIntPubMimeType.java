@@ -48,6 +48,8 @@ public interface ICFIntPubMimeType
 	public static final String S_INIT_UPDATED_BY = "0000000000000000000000000000000000000000000000000000000000000000";
 	public static final CFLibDbKeyHash256 INIT_UPDATED_BY = CFLibDbKeyHash256.fromHex(S_INIT_UPDATED_BY);
 	public static final int MIMETYPEID_INIT_VALUE = 0;
+	public static final String NAME_INIT_VALUE = new String( "" );
+	public static final String FILETYPES_INIT_VALUE = new String( "" );
 	public final static int CLASS_CODE = 0xa103;
 	public final static String S_CLASS_CODE = "a103";
 
@@ -70,6 +72,10 @@ public interface ICFIntPubMimeType
 	public int getRequiredRevision();
 	public void setRequiredRevision( int value );
 
+	public String getRequiredName();
+	public void setRequiredName( String value );
+	public String getOptionalFileTypes();
+	public void setOptionalFileTypes( String value );
 	@Override
 	public boolean equals( Object obj );
 	

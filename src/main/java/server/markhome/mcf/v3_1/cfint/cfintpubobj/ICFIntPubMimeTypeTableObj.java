@@ -159,9 +159,34 @@ public interface ICFIntPubMimeTypeTableObj
 	ICFIntPubMimeTypeObj readMimeTypeByIdIdx( int MimeTypeId,
 		boolean forceRead );
 
+	/**
+	 *	Get the CFIntPubMimeTypeObj instance for the unique UNameIdx key.
+	 *
+	 *	@param	Name	The MimeType key attribute of the instance generating the id.
+	 *
+	 *	@return	CFIntPubMimeTypeObj cached instance for the unique UNameIdx key, or
+	 *		null if no such instance exists.
+	 */
+	ICFIntPubMimeTypeObj readMimeTypeByUNameIdx(String Name );
+
+	/**
+	 *	Get the CFIntPubMimeTypeObj instance for the unique UNameIdx key.
+	 *
+	 *	@param	Name	The MimeType key attribute of the instance generating the id.
+	 *
+	 *	@return	CFIntPubMimeTypeObj refreshed instance for the unique UNameIdx key, or
+	 *		null if no such instance exists.
+	 */
+	ICFIntPubMimeTypeObj readMimeTypeByUNameIdx(String Name,
+		boolean forceRead );
+
 	ICFIntPubMimeTypeObj readCachedMimeTypeByIdIdx( int MimeTypeId );
 
+	ICFIntPubMimeTypeObj readCachedMimeTypeByUNameIdx( String Name );
+
 	void deepDisposeMimeTypeByIdIdx( int MimeTypeId );
+
+	void deepDisposeMimeTypeByUNameIdx( String Name );
 
 	/**
 	 *	Internal use only.
@@ -179,4 +204,11 @@ public interface ICFIntPubMimeTypeTableObj
 	 *	@param	MimeTypeId	The MimeType key attribute of the instance generating the id.
 	 */
 	void deleteMimeTypeByIdIdx( int MimeTypeId );
+
+	/**
+	 *	Internal use only.
+	 *
+	 *	@param	Name	The MimeType key attribute of the instance generating the id.
+	 */
+	void deleteMimeTypeByUNameIdx(String Name );
 }

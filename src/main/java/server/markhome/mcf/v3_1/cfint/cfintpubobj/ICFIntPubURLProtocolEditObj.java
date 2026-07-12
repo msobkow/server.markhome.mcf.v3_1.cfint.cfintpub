@@ -118,6 +118,48 @@ public interface ICFIntPubURLProtocolEditObj
 	 */
 	void setRequiredURLProtocolId(int value);
 
+	/**
+	 *	Get the required String attribute Name.
+	 *
+	 *	@return	The required String attribute Name.
+	 */
+	String getRequiredName();
+
+	/**
+	 *	Set the required String attribute Name.
+	 *
+	 *	@param value The required String attribute Name value to be applied.
+	 */
+	void setRequiredName(String value);
+
+	/**
+	 *	Get the required String attribute Description.
+	 *
+	 *	@return	The required String attribute Description.
+	 */
+	String getRequiredDescription();
+
+	/**
+	 *	Set the required String attribute Description.
+	 *
+	 *	@param value The required String attribute Description value to be applied.
+	 */
+	void setRequiredDescription(String value);
+
+	/**
+	 *	Get the required boolean attribute IsSecure.
+	 *
+	 *	@return	The required boolean attribute IsSecure.
+	 */
+	boolean getRequiredIsSecure();
+
+	/**
+	 *	Set the required boolean attribute IsSecure.
+	 *
+	 *	@param value The required boolean attribute IsSecure value to be applied.
+	 */
+	void setRequiredIsSecure(boolean value);
+
 	public void copyRecToOrig();
 	public void copyOrigToRec();
 
