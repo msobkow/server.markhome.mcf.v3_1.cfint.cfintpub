@@ -90,25 +90,6 @@ public interface ICFIntPubMimeTypeTable
 	 */
 	public void pubdeleteMimeTypeByIdIdx( ICFSecPubAuthorization Authorization,
 		Integer argKey );
-	/**
-	 *	Delete the MimeType instances identified by the key UNameIdx.
-	 *
-	 *	@param	Authorization	The session authorization information.
-	 *
-	 *	@param	Name	The MimeType key attribute of the instance generating the id.
-	 */
-	public void pubdeleteMimeTypeByUNameIdx( ICFSecPubAuthorization Authorization,
-		String argName );
-
-	/**
-	 *	Delete the MimeType instances identified by the key UNameIdx.
-	 *
-	 *	@param	Authorization	The session authorization information.
-	 *
-	 *	@param	argKey	The key identifying the instances to be deleted.
-	 */
-	public void pubdeleteMimeTypeByUNameIdx( ICFSecPubAuthorization Authorization,
-		ICFIntPubMimeTypeByUNameIdxKey argKey );
 
 
 	/**
@@ -158,19 +139,6 @@ public interface ICFIntPubMimeTypeTable
 	 */
 	public ICFIntPubMimeType pubreadDerivedByIdIdx( ICFSecPubAuthorization Authorization,
 		int MimeTypeId );
-
-	/**
-	 *	Read the derived MimeType record instance identified by the unique key UNameIdx.
-	 *
-	 *	@param	Authorization	The session authorization information.
-	 *
-	 *	@param	Name	The MimeType key attribute of the instance generating the id.
-	 *
-	 *	@return The record instance for the specified key, or null if there is
-	 *		no such existing key value.
-	 */
-	public ICFIntPubMimeType pubreadDerivedByUNameIdx( ICFSecPubAuthorization Authorization,
-		String Name );
 
 	/**
 	 *	Read the specific MimeType record instance identified by the primary key.
@@ -225,19 +193,4 @@ public interface ICFIntPubMimeTypeTable
 	 */
 	public ICFIntPubMimeType pubreadRecByIdIdx( ICFSecPubAuthorization Authorization,
 		int MimeTypeId );
-
-	/**
-	 *	Read the specific MimeType record instance identified by the unique key UNameIdx.
-	 *
-	 *	@param	Authorization	The session authorization information.
-	 *
-	 *	@param	Name	The MimeType key attribute of the instance generating the id.
-	 *
-	 *	@return The record instance for the specified key, or null if there is
-	 *		no such existing key value.
-	 *
-	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
-	 */
-	public ICFIntPubMimeType pubreadRecByUNameIdx( ICFSecPubAuthorization Authorization,
-		String Name );
 }

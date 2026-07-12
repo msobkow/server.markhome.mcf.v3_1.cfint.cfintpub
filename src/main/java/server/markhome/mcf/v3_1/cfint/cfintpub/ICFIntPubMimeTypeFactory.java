@@ -52,13 +52,6 @@ public interface ICFIntPubMimeTypeFactory
 	ICFIntPubMimeTypeHPKey newPubHPKey();
 
 	/**
-	 *	Allocate a public UNameIdx key over public MimeType instances.
-	 *
-	 *	@return	The new instance.
-	 */
-	public ICFIntPubMimeTypeByUNameIdxKey newPubByUNameIdxKey();
-
-	/**
 	 *	Allocate a public MimeType interface implementation.
 	 *
 	 *	@return	The new instance.

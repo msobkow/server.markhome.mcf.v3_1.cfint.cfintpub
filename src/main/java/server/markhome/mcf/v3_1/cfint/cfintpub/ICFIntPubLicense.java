@@ -50,8 +50,6 @@ public interface ICFIntPubLicense
 	public static final CFLibDbKeyHash256 TOPDOMAINID_INIT_VALUE = CFLibDbKeyHash256.fromHex( S_TOPDOMAINID_INIT_VALUE );
 	public static final String NAME_INIT_VALUE = new String( "" );
 	public static final String DESCRIPTION_INIT_VALUE = new String( "" );
-	public static final String EMBEDDEDTEXT_INIT_VALUE = new String( "" );
-	public static final String FULLTEXT_INIT_VALUE = new String( "" );
 	public final static int CLASS_CODE = 0xa110;
 	public final static String S_CLASS_CODE = "a110";
 
@@ -77,10 +75,6 @@ public interface ICFIntPubLicense
 	public void setRequiredName( String value );
 	public String getOptionalDescription();
 	public void setOptionalDescription( String value );
-	public String getOptionalEmbeddedText();
-	public void setOptionalEmbeddedText( String value );
-	public String getOptionalFullText();
-	public void setOptionalFullText( String value );
 	@Override
 	public boolean equals( Object obj );
 	

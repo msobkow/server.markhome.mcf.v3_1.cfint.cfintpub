@@ -220,27 +220,6 @@ public interface ICFIntPubURLProtocolObj
 	int getRequiredURLProtocolId();
 
 	/**
-	 *	Get the required String attribute Name.
-	 *
-	 *	@return	The required String attribute Name.
-	 */
-	String getRequiredName();
-
-	/**
-	 *	Get the required String attribute Description.
-	 *
-	 *	@return	The required String attribute Description.
-	 */
-	String getRequiredDescription();
-
-	/**
-	 *	Get the required boolean attribute IsSecure.
-	 *
-	 *	@return	The required boolean attribute IsSecure.
-	 */
-	boolean getRequiredIsSecure();
-
-	/**
 	 *	Internal use only.
 	 */
 	void copyPKeyToRec();

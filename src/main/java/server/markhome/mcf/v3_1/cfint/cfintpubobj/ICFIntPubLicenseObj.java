@@ -249,20 +249,6 @@ public interface ICFIntPubLicenseObj
 	String getOptionalDescription();
 
 	/**
-	 *	Get the optional String attribute EmbeddedText.
-	 *
-	 *	@return	The optional String attribute EmbeddedText.
-	 */
-	String getOptionalEmbeddedText();
-
-	/**
-	 *	Get the optional String attribute FullText.
-	 *
-	 *	@return	The optional String attribute FullText.
-	 */
-	String getOptionalFullText();
-
-	/**
 	 *	Internal use only.
 	 */
 	void copyPKeyToRec();

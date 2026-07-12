@@ -159,59 +159,9 @@ public interface ICFIntPubURLProtocolTableObj
 	ICFIntPubURLProtocolObj readURLProtocolByIdIdx( int URLProtocolId,
 		boolean forceRead );
 
-	/**
-	 *	Get the CFIntPubURLProtocolObj instance for the unique UNameIdx key.
-	 *
-	 *	@param	Name	The URLProtocol key attribute of the instance generating the id.
-	 *
-	 *	@return	CFIntPubURLProtocolObj cached instance for the unique UNameIdx key, or
-	 *		null if no such instance exists.
-	 */
-	ICFIntPubURLProtocolObj readURLProtocolByUNameIdx(String Name );
-
-	/**
-	 *	Get the CFIntPubURLProtocolObj instance for the unique UNameIdx key.
-	 *
-	 *	@param	Name	The URLProtocol key attribute of the instance generating the id.
-	 *
-	 *	@return	CFIntPubURLProtocolObj refreshed instance for the unique UNameIdx key, or
-	 *		null if no such instance exists.
-	 */
-	ICFIntPubURLProtocolObj readURLProtocolByUNameIdx(String Name,
-		boolean forceRead );
-
-	/**
-	 *	Get the map of CFIntPubURLProtocolObj instances sorted by their primary keys for the duplicate IsSecureIdx key.
-	 *
-	 *	@param	IsSecure	The URLProtocol key attribute of the instance generating the id.
-	 *
-	 *	@return	List of CFIntPubURLProtocolObj cached instances sorted by their primary keys for the duplicate IsSecureIdx key,
-	 *		which may be an empty set.
-	 */
-	List<ICFIntPubURLProtocolObj> readURLProtocolByIsSecureIdx( boolean IsSecure );
-
-	/**
-	 *	Get the map of CFIntPubURLProtocolObj instances sorted by their primary keys for the duplicate IsSecureIdx key.
-	 *
-	 *	@param	IsSecure	The URLProtocol key attribute of the instance generating the id.
-	 *
-	 *	@return	List of CFIntPubURLProtocolObj cached instances sorted by their primary keys for the duplicate IsSecureIdx key,
-	 *		which may be an empty set.
-	 */
-	List<ICFIntPubURLProtocolObj> readURLProtocolByIsSecureIdx( boolean IsSecure,
-		boolean forceRead );
-
 	ICFIntPubURLProtocolObj readCachedURLProtocolByIdIdx( int URLProtocolId );
 
-	ICFIntPubURLProtocolObj readCachedURLProtocolByUNameIdx( String Name );
-
-	List<ICFIntPubURLProtocolObj> readCachedURLProtocolByIsSecureIdx( boolean IsSecure );
-
 	void deepDisposeURLProtocolByIdIdx( int URLProtocolId );
-
-	void deepDisposeURLProtocolByUNameIdx( String Name );
-
-	void deepDisposeURLProtocolByIsSecureIdx( boolean IsSecure );
 
 	/**
 	 *	Internal use only.
@@ -229,18 +179,4 @@ public interface ICFIntPubURLProtocolTableObj
 	 *	@param	URLProtocolId	The URLProtocol key attribute of the instance generating the id.
 	 */
 	void deleteURLProtocolByIdIdx( int URLProtocolId );
-
-	/**
-	 *	Internal use only.
-	 *
-	 *	@param	Name	The URLProtocol key attribute of the instance generating the id.
-	 */
-	void deleteURLProtocolByUNameIdx(String Name );
-
-	/**
-	 *	Internal use only.
-	 *
-	 *	@param	IsSecure	The URLProtocol key attribute of the instance generating the id.
-	 */
-	void deleteURLProtocolByIsSecureIdx( boolean IsSecure );
 }

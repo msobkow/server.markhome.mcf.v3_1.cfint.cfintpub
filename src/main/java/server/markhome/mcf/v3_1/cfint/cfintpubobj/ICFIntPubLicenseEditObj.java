@@ -174,34 +174,6 @@ public interface ICFIntPubLicenseEditObj
 	 */
 	void setOptionalDescription(String value);
 
-	/**
-	 *	Get the optional String attribute EmbeddedText.
-	 *
-	 *	@return	The optional String attribute EmbeddedText.
-	 */
-	String getOptionalEmbeddedText();
-
-	/**
-	 *	Set the optional String attribute EmbeddedText.
-	 *
-	 *	@param value The optional String attribute EmbeddedText value to be applied.
-	 */
-	void setOptionalEmbeddedText(String value);
-
-	/**
-	 *	Get the optional String attribute FullText.
-	 *
-	 *	@return	The optional String attribute FullText.
-	 */
-	String getOptionalFullText();
-
-	/**
-	 *	Set the optional String attribute FullText.
-	 *
-	 *	@param value The optional String attribute FullText value to be applied.
-	 */
-	void setOptionalFullText(String value);
-
 	public void copyRecToOrig();
 	public void copyOrigToRec();
 
