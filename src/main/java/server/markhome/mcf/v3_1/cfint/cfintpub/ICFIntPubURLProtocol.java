@@ -57,17 +57,23 @@ public interface ICFIntPubURLProtocol
 	public int getClassCode();
 
 	public CFLibDbKeyHash256 getCreatedByUserId();
+
 	public void setCreatedByUserId( CFLibDbKeyHash256 value );
+
 	public LocalDateTime getCreatedAt();
+
 	public void setCreatedAt( LocalDateTime value );
+
 	public CFLibDbKeyHash256 getUpdatedByUserId();
+
 	public void setUpdatedByUserId( CFLibDbKeyHash256 value );
+
 	public LocalDateTime getUpdatedAt();
+
 	public void setUpdatedAt( LocalDateTime value );
 
 	public Integer getPKey();
 	public void setPKey(Integer requiredURLProtocolId);
-	
 	public int getRequiredURLProtocolId();
 	public void setRequiredURLProtocolId( int value );
 	public int getRequiredRevision();
@@ -79,22 +85,21 @@ public interface ICFIntPubURLProtocol
 	public void setRequiredDescription( String value );
 	public boolean getRequiredIsSecure();
 	public void setRequiredIsSecure( boolean value );
-	@Override
 	public boolean equals( Object obj );
-	
-	@Override
+
 	public int hashCode();
 
-	//@Override not necessary because interfaces aren't able to implement Comparable, but they can double-team on the requirement
 	public int compareTo( Object obj );
 
 	public void set( ICFIntPubURLProtocol src );
+
 	public void setURLProtocol( ICFIntPubURLProtocol src );
+
 	public void set( ICFIntPubURLProtocolH src );
+
 	public void setURLProtocol( ICFIntPubURLProtocolH src );
 
 	public String getXmlAttrFragment();
 
-	@Override
 	public String toString();
 }

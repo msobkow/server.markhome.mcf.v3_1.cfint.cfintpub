@@ -60,50 +60,58 @@ public interface ICFIntPubMinorVersion
 	public int getClassCode();
 
 	public CFLibDbKeyHash256 getCreatedByUserId();
+
 	public void setCreatedByUserId( CFLibDbKeyHash256 value );
+
 	public LocalDateTime getCreatedAt();
+
 	public void setCreatedAt( LocalDateTime value );
+
 	public CFLibDbKeyHash256 getUpdatedByUserId();
+
 	public void setUpdatedByUserId( CFLibDbKeyHash256 value );
+
 	public LocalDateTime getUpdatedAt();
+
 	public void setUpdatedAt( LocalDateTime value );
 
 	public CFLibDbKeyHash256 getPKey();
 	public void setPKey(CFLibDbKeyHash256 requiredId);
-	
 	public CFLibDbKeyHash256 getRequiredId();
 	public void setRequiredId( CFLibDbKeyHash256 value );
 	public int getRequiredRevision();
 	public void setRequiredRevision( int value );
 
 	public ICFSecPubTenant getRequiredOwnerTenant();
-	public ICFIntPubMajorVersion getRequiredContainerParentMajVer();
-	public void setRequiredOwnerTenant(ICFSecPubTenant argObj);
+
 	public void setRequiredOwnerTenant(CFLibDbKeyHash256 argTenantId);
+
+	public ICFIntPubMajorVersion getRequiredContainerParentMajVer();
+
 	public void setRequiredContainerParentMajVer(ICFIntPubMajorVersion argObj);
 	public void setRequiredContainerParentMajVer(CFLibDbKeyHash256 argMajorVersionId);
+
 	public CFLibDbKeyHash256 getRequiredTenantId();
 	public CFLibDbKeyHash256 getRequiredMajorVersionId();
 	public String getRequiredName();
 	public void setRequiredName( String value );
 	public String getOptionalDescription();
 	public void setOptionalDescription( String value );
-	@Override
 	public boolean equals( Object obj );
-	
-	@Override
+
 	public int hashCode();
 
-	//@Override not necessary because interfaces aren't able to implement Comparable, but they can double-team on the requirement
 	public int compareTo( Object obj );
 
 	public void set( ICFIntPubMinorVersion src );
+
 	public void setMinorVersion( ICFIntPubMinorVersion src );
+
 	public void set( ICFIntPubMinorVersionH src );
+
 	public void setMinorVersion( ICFIntPubMinorVersionH src );
 
 	public String getXmlAttrFragment();
 
-	@Override
 	public String toString();
 }

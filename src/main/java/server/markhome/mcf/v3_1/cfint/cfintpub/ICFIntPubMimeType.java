@@ -56,17 +56,23 @@ public interface ICFIntPubMimeType
 	public int getClassCode();
 
 	public CFLibDbKeyHash256 getCreatedByUserId();
+
 	public void setCreatedByUserId( CFLibDbKeyHash256 value );
+
 	public LocalDateTime getCreatedAt();
+
 	public void setCreatedAt( LocalDateTime value );
+
 	public CFLibDbKeyHash256 getUpdatedByUserId();
+
 	public void setUpdatedByUserId( CFLibDbKeyHash256 value );
+
 	public LocalDateTime getUpdatedAt();
+
 	public void setUpdatedAt( LocalDateTime value );
 
 	public Integer getPKey();
 	public void setPKey(Integer requiredMimeTypeId);
-	
 	public int getRequiredMimeTypeId();
 	public void setRequiredMimeTypeId( int value );
 	public int getRequiredRevision();
@@ -76,22 +82,21 @@ public interface ICFIntPubMimeType
 	public void setRequiredName( String value );
 	public String getOptionalFileTypes();
 	public void setOptionalFileTypes( String value );
-	@Override
 	public boolean equals( Object obj );
-	
-	@Override
+
 	public int hashCode();
 
-	//@Override not necessary because interfaces aren't able to implement Comparable, but they can double-team on the requirement
 	public int compareTo( Object obj );
 
 	public void set( ICFIntPubMimeType src );
+
 	public void setMimeType( ICFIntPubMimeType src );
+
 	public void set( ICFIntPubMimeTypeH src );
+
 	public void setMimeType( ICFIntPubMimeTypeH src );
 
 	public String getXmlAttrFragment();
 
-	@Override
 	public String toString();
 }

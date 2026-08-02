@@ -59,18 +59,20 @@ public interface ICFIntPubLicense
 
 	public CFLibDbKeyHash256 getPKey();
 	public void setPKey(CFLibDbKeyHash256 requiredId);
-	
 	public CFLibDbKeyHash256 getRequiredId();
 	public void setRequiredId( CFLibDbKeyHash256 value );
 	public int getRequiredRevision();
 	public void setRequiredRevision( int value );
 
 	public ICFSecPubTenant getRequiredOwnerTenant();
-	public ICFIntPubTopDomain getRequiredContainerTopDomain();
-	public void setRequiredOwnerTenant(ICFSecPubTenant argObj);
+
 	public void setRequiredOwnerTenant(CFLibDbKeyHash256 argTenantId);
+
+	public ICFIntPubTopDomain getRequiredContainerTopDomain();
+
 	public void setRequiredContainerTopDomain(ICFIntPubTopDomain argObj);
 	public void setRequiredContainerTopDomain(CFLibDbKeyHash256 argTopDomainId);
+
 	public CFLibDbKeyHash256 getRequiredTenantId();
 	public CFLibDbKeyHash256 getRequiredTopDomainId();
 	public String getRequiredName();
@@ -81,22 +83,21 @@ public interface ICFIntPubLicense
 	public void setOptionalEmbeddedText( String value );
 	public String getOptionalFullText();
 	public void setOptionalFullText( String value );
-	@Override
 	public boolean equals( Object obj );
-	
-	@Override
+
 	public int hashCode();
 
-	//@Override not necessary because interfaces aren't able to implement Comparable, but they can double-team on the requirement
 	public int compareTo( Object obj );
 
 	public void set( ICFIntPubLicense src );
+
 	public void setLicense( ICFIntPubLicense src );
+
 	public void set( ICFIntPubLicenseH src );
+
 	public void setLicense( ICFIntPubLicenseH src );
 
 	public String getXmlAttrFragment();
 
-	@Override
 	public String toString();
 }

@@ -60,51 +60,60 @@ public interface ICFIntPubMajorVersion
 	public int getClassCode();
 
 	public CFLibDbKeyHash256 getCreatedByUserId();
+
 	public void setCreatedByUserId( CFLibDbKeyHash256 value );
+
 	public LocalDateTime getCreatedAt();
+
 	public void setCreatedAt( LocalDateTime value );
+
 	public CFLibDbKeyHash256 getUpdatedByUserId();
+
 	public void setUpdatedByUserId( CFLibDbKeyHash256 value );
+
 	public LocalDateTime getUpdatedAt();
+
 	public void setUpdatedAt( LocalDateTime value );
 
 	public CFLibDbKeyHash256 getPKey();
 	public void setPKey(CFLibDbKeyHash256 requiredId);
-	
 	public List<ICFIntPubMinorVersion> getOptionalComponentsMinorVer();
+
 	public CFLibDbKeyHash256 getRequiredId();
 	public void setRequiredId( CFLibDbKeyHash256 value );
 	public int getRequiredRevision();
 	public void setRequiredRevision( int value );
 
 	public ICFSecPubTenant getRequiredOwnerTenant();
-	public ICFIntPubSubProject getRequiredContainerParentSPrj();
-	public void setRequiredOwnerTenant(ICFSecPubTenant argObj);
+
 	public void setRequiredOwnerTenant(CFLibDbKeyHash256 argTenantId);
+
+	public ICFIntPubSubProject getRequiredContainerParentSPrj();
+
 	public void setRequiredContainerParentSPrj(ICFIntPubSubProject argObj);
 	public void setRequiredContainerParentSPrj(CFLibDbKeyHash256 argSubProjectId);
+
 	public CFLibDbKeyHash256 getRequiredTenantId();
 	public CFLibDbKeyHash256 getRequiredSubProjectId();
 	public String getRequiredName();
 	public void setRequiredName( String value );
 	public String getOptionalDescription();
 	public void setOptionalDescription( String value );
-	@Override
 	public boolean equals( Object obj );
-	
-	@Override
+
 	public int hashCode();
 
-	//@Override not necessary because interfaces aren't able to implement Comparable, but they can double-team on the requirement
 	public int compareTo( Object obj );
 
 	public void set( ICFIntPubMajorVersion src );
+
 	public void setMajorVersion( ICFIntPubMajorVersion src );
+
 	public void set( ICFIntPubMajorVersionH src );
+
 	public void setMajorVersion( ICFIntPubMajorVersionH src );
 
 	public String getXmlAttrFragment();
 
-	@Override
 	public String toString();
 }
