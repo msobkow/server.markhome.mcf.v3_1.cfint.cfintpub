@@ -87,6 +87,7 @@ public interface ICFIntPubTld
 	public void setRequiredContainerTenant(CFLibDbKeyHash256 argTenantId);
 
 	public CFLibDbKeyHash256 getRequiredTenantId();
+	public void setRequiredTenantId( CFLibDbKeyHash256 value );
 	public String getRequiredName();
 	public void setRequiredName( String value );
 	public String getOptionalDescription();

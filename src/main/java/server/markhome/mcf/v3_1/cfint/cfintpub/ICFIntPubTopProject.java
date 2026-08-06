@@ -94,7 +94,9 @@ public interface ICFIntPubTopProject
 	public void setRequiredContainerParentSDom(CFLibDbKeyHash256 argTopDomainId);
 
 	public CFLibDbKeyHash256 getRequiredTenantId();
+	public void setRequiredTenantId( CFLibDbKeyHash256 value );
 	public CFLibDbKeyHash256 getRequiredTopDomainId();
+	public void setRequiredTopDomainId( CFLibDbKeyHash256 value );
 	public String getRequiredName();
 	public void setRequiredName( String value );
 	public String getOptionalDescription();
