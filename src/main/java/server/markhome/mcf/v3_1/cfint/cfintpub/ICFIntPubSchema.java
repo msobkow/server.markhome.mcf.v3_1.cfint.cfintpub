@@ -124,18 +124,18 @@ extends ICFSecPubSchema
 		final static ArrayList<ICFSecPubSchema.ClassMapEntry> entries = new ArrayList<>();
 		final static HashMap<Integer,ICFSecPubSchema.ClassMapEntry> mapBackingClassCodeToEntry = new HashMap<>();
 		final static HashMap<Integer,ICFSecPubSchema.ClassMapEntry> mapRuntimeClassCodeToEntry = new HashMap<>();
-		final static AtomicReference<ICFIntPubSchema> backingCFIntPubSchema = new AtomicReference<>();
-		public static ICFIntPubSchema getBackingCFIntPubSchema() {
-			return( ICFIntPubSchema.backingCFIntPubSchema.get() );
+		final static AtomicReference<ICFIntPubSchema> backingCFInt = new AtomicReference<>();
+		public static ICFIntPubSchema getBackingCFInt() {
+			return( ICFIntPubSchema.backingCFInt.get() );
 		}
 		
-		public static void setBackingCFIntPubSchema(ICFIntPubSchema backingSchema) {
-			ICFIntPubSchema.backingCFIntPubSchema.set(backingSchema);
+		public static void setBackingPubSchema(ICFIntPubSchema backingSchema) {
+			ICFIntPubSchema.backingCFInt.set(backingSchema);
 		}
 		
-		public ICFIntPubSchema getCFIntPubSchema();
-		public void setCFIntPubSchema(ICFIntPubSchema schema);
-		
+		public ICFIntPubSchema getCFIntSchema();
+		public void setCFIntSchema(ICFIntPubSchema schema);
+
 		public static int doInitClassMapEntries(int value) {
 			value = ICFSecPubSchema.doInitClassMapEntries(value);
 			if (ICFIntPubSchema.entries.isEmpty()) {
