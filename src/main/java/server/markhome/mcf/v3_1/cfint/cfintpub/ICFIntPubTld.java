@@ -73,8 +73,8 @@ public interface ICFIntPubTld
 
 	public void setUpdatedAt( LocalDateTime value );
 
-	public CFLibDbKeyHash256 getPKey();
-	public void setPKey(CFLibDbKeyHash256 requiredId);
+	public $implJavaOptAtomType$ getPKey();
+	public void setPKey($implJavaOptAtomType$ requiredId);
 	public List<ICFIntPubTopDomain> getOptionalComponentsTopDomain();
 
 	public CFLibDbKeyHash256 getRequiredId();
@@ -84,7 +84,7 @@ public interface ICFIntPubTld
 
 	public ICFSecPubTenant getRequiredContainerTenant();
 
-	public void setRequiredContainerTenant(CFLibDbKeyHash256 argTenantId);
+	public void setRequiredContainerTenant(ICFLibKeyHash256 argTenantId);
 
 	public CFLibDbKeyHash256 getRequiredTenantId();
 	public void setRequiredTenantId( CFLibDbKeyHash256 value );
