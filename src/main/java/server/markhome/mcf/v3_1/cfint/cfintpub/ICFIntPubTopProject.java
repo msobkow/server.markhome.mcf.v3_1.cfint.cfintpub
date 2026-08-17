@@ -75,8 +75,8 @@ public interface ICFIntPubTopProject
 
 	public void setUpdatedAt( LocalDateTime value );
 
-	public $implJavaOptAtomType$ getPKey();
-	public void setPKey($implJavaOptAtomType$ requiredId);
+	public ICFLibKeyHash256 getPKey();
+	public void setPKey(ICFLibKeyHash256 requiredId);
 	public List<ICFIntPubSubProject> getOptionalComponentsSubProject();
 
 	public CFLibDbKeyHash256 getRequiredId();

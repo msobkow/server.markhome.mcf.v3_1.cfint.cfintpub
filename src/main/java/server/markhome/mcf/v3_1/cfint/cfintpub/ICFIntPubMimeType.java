@@ -71,8 +71,8 @@ public interface ICFIntPubMimeType
 
 	public void setUpdatedAt( LocalDateTime value );
 
-	public $implJavaOptAtomType$ getPKey();
-	public void setPKey($implJavaOptAtomType$ requiredMimeTypeId);
+	public Integer getPKey();
+	public void setPKey(Integer requiredMimeTypeId);
 	public int getRequiredMimeTypeId();
 	public void setRequiredMimeTypeId( int value );
 	public int getRequiredRevision();
