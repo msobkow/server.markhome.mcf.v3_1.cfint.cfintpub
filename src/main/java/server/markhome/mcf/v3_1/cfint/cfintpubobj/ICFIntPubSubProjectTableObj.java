@@ -97,7 +97,7 @@ public interface ICFIntPubSubProjectTableObj
 	 *	@return	The SubProject-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFIntPubSubProjectObj readSubProject( CFLibDbKeyHash256 pkey );
+	ICFIntPubSubProjectObj readSubProject( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Read a SubProject-derived instance by it's primary key.
@@ -107,19 +107,19 @@ public interface ICFIntPubSubProjectTableObj
 	 *	@return	The SubProject-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFIntPubSubProjectObj readSubProject( CFLibDbKeyHash256 pkey,
+	ICFIntPubSubProjectObj readSubProject( ICFLibKeyHash256 pkey,
 		boolean forceRead );
 
-	ICFIntPubSubProjectObj readCachedSubProject( CFLibDbKeyHash256 pkey );
+	ICFIntPubSubProjectObj readCachedSubProject( ICFLibKeyHash256 pkey );
 
 	public void reallyDeepDisposeSubProject( ICFIntPubSubProjectObj obj );
 
-	void deepDisposeSubProject( CFLibDbKeyHash256 pkey );
+	void deepDisposeSubProject( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Internal use only.
 	 */
-	ICFIntPubSubProjectObj lockSubProject( CFLibDbKeyHash256 pkey );
+	ICFIntPubSubProjectObj lockSubProject( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Return a sorted list of all the SubProject-derived instances in the database.

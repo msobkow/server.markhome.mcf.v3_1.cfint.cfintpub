@@ -90,7 +90,7 @@ public interface ICFIntPubTopDomainTable
 	 *	@param	argKey	The primary key identifying the instance to be deleted.
 	 */
 	public void pubdeleteTopDomainByIdIdx( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 argKey );
+		ICFLibKeyHash256 argKey );
 	/**
 	 *	Delete the TopDomain instances identified by the key TenantIdx.
 	 *
@@ -164,7 +164,7 @@ public interface ICFIntPubTopDomainTable
 	 *		no such existing key value.
 	 */
 	public ICFIntPubTopDomain pubreadDerived( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Lock the derived TopDomain record instance by primary key.
@@ -177,7 +177,7 @@ public interface ICFIntPubTopDomainTable
 	 *		no such existing key value.
 	 */
 	public ICFIntPubTopDomain publockDerived( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Read all TopDomain instances.
@@ -254,7 +254,7 @@ public interface ICFIntPubTopDomainTable
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
 	public ICFIntPubTopDomain pubreadRec( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Lock the specific TopDomain record instance identified by the primary key.
@@ -269,7 +269,7 @@ public interface ICFIntPubTopDomainTable
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
 	public ICFIntPubTopDomain publockRec( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Read all the specific TopDomain record instances.

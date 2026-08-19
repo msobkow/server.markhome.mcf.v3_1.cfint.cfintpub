@@ -90,7 +90,7 @@ public interface ICFIntPubSubProjectTable
 	 *	@param	argKey	The primary key identifying the instance to be deleted.
 	 */
 	public void pubdeleteSubProjectByIdIdx( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 argKey );
+		ICFLibKeyHash256 argKey );
 	/**
 	 *	Delete the SubProject instances identified by the key TenantIdx.
 	 *
@@ -164,7 +164,7 @@ public interface ICFIntPubSubProjectTable
 	 *		no such existing key value.
 	 */
 	public ICFIntPubSubProject pubreadDerived( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Lock the derived SubProject record instance by primary key.
@@ -177,7 +177,7 @@ public interface ICFIntPubSubProjectTable
 	 *		no such existing key value.
 	 */
 	public ICFIntPubSubProject publockDerived( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Read all SubProject instances.
@@ -254,7 +254,7 @@ public interface ICFIntPubSubProjectTable
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
 	public ICFIntPubSubProject pubreadRec( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Lock the specific SubProject record instance identified by the primary key.
@@ -269,7 +269,7 @@ public interface ICFIntPubSubProjectTable
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
 	public ICFIntPubSubProject publockRec( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Read all the specific SubProject record instances.

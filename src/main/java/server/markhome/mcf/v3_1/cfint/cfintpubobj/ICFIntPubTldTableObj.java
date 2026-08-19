@@ -97,7 +97,7 @@ public interface ICFIntPubTldTableObj
 	 *	@return	The Tld-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFIntPubTldObj readTld( CFLibDbKeyHash256 pkey );
+	ICFIntPubTldObj readTld( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Read a Tld-derived instance by it's primary key.
@@ -107,19 +107,19 @@ public interface ICFIntPubTldTableObj
 	 *	@return	The Tld-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFIntPubTldObj readTld( CFLibDbKeyHash256 pkey,
+	ICFIntPubTldObj readTld( ICFLibKeyHash256 pkey,
 		boolean forceRead );
 
-	ICFIntPubTldObj readCachedTld( CFLibDbKeyHash256 pkey );
+	ICFIntPubTldObj readCachedTld( ICFLibKeyHash256 pkey );
 
 	public void reallyDeepDisposeTld( ICFIntPubTldObj obj );
 
-	void deepDisposeTld( CFLibDbKeyHash256 pkey );
+	void deepDisposeTld( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Internal use only.
 	 */
-	ICFIntPubTldObj lockTld( CFLibDbKeyHash256 pkey );
+	ICFIntPubTldObj lockTld( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Return a sorted list of all the Tld-derived instances in the database.

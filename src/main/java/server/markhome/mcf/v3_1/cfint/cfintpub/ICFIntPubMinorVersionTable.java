@@ -90,7 +90,7 @@ public interface ICFIntPubMinorVersionTable
 	 *	@param	argKey	The primary key identifying the instance to be deleted.
 	 */
 	public void pubdeleteMinorVersionByIdIdx( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 argKey );
+		ICFLibKeyHash256 argKey );
 	/**
 	 *	Delete the MinorVersion instances identified by the key TenantIdx.
 	 *
@@ -164,7 +164,7 @@ public interface ICFIntPubMinorVersionTable
 	 *		no such existing key value.
 	 */
 	public ICFIntPubMinorVersion pubreadDerived( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Lock the derived MinorVersion record instance by primary key.
@@ -177,7 +177,7 @@ public interface ICFIntPubMinorVersionTable
 	 *		no such existing key value.
 	 */
 	public ICFIntPubMinorVersion publockDerived( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Read all MinorVersion instances.
@@ -254,7 +254,7 @@ public interface ICFIntPubMinorVersionTable
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
 	public ICFIntPubMinorVersion pubreadRec( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Lock the specific MinorVersion record instance identified by the primary key.
@@ -269,7 +269,7 @@ public interface ICFIntPubMinorVersionTable
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
 	public ICFIntPubMinorVersion publockRec( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Read all the specific MinorVersion record instances.

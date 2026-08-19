@@ -97,7 +97,7 @@ public interface ICFIntPubMajorVersionTableObj
 	 *	@return	The MajorVersion-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFIntPubMajorVersionObj readMajorVersion( CFLibDbKeyHash256 pkey );
+	ICFIntPubMajorVersionObj readMajorVersion( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Read a MajorVersion-derived instance by it's primary key.
@@ -107,19 +107,19 @@ public interface ICFIntPubMajorVersionTableObj
 	 *	@return	The MajorVersion-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFIntPubMajorVersionObj readMajorVersion( CFLibDbKeyHash256 pkey,
+	ICFIntPubMajorVersionObj readMajorVersion( ICFLibKeyHash256 pkey,
 		boolean forceRead );
 
-	ICFIntPubMajorVersionObj readCachedMajorVersion( CFLibDbKeyHash256 pkey );
+	ICFIntPubMajorVersionObj readCachedMajorVersion( ICFLibKeyHash256 pkey );
 
 	public void reallyDeepDisposeMajorVersion( ICFIntPubMajorVersionObj obj );
 
-	void deepDisposeMajorVersion( CFLibDbKeyHash256 pkey );
+	void deepDisposeMajorVersion( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Internal use only.
 	 */
-	ICFIntPubMajorVersionObj lockMajorVersion( CFLibDbKeyHash256 pkey );
+	ICFIntPubMajorVersionObj lockMajorVersion( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Return a sorted list of all the MajorVersion-derived instances in the database.

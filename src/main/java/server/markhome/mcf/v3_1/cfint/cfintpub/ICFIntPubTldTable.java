@@ -90,7 +90,7 @@ public interface ICFIntPubTldTable
 	 *	@param	argKey	The primary key identifying the instance to be deleted.
 	 */
 	public void pubdeleteTldByIdIdx( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 argKey );
+		ICFLibKeyHash256 argKey );
 	/**
 	 *	Delete the Tld instances identified by the key TenantIdx.
 	 *
@@ -142,7 +142,7 @@ public interface ICFIntPubTldTable
 	 *		no such existing key value.
 	 */
 	public ICFIntPubTld pubreadDerived( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Lock the derived Tld record instance by primary key.
@@ -155,7 +155,7 @@ public interface ICFIntPubTldTable
 	 *		no such existing key value.
 	 */
 	public ICFIntPubTld publockDerived( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Read all Tld instances.
@@ -217,7 +217,7 @@ public interface ICFIntPubTldTable
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
 	public ICFIntPubTld pubreadRec( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Lock the specific Tld record instance identified by the primary key.
@@ -232,7 +232,7 @@ public interface ICFIntPubTldTable
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
 	public ICFIntPubTld publockRec( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Read all the specific Tld record instances.

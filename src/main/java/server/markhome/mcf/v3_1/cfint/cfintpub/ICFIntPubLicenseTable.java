@@ -90,7 +90,7 @@ public interface ICFIntPubLicenseTable
 	 *	@param	argKey	The primary key identifying the instance to be deleted.
 	 */
 	public void pubdeleteLicenseByIdIdx( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 argKey );
+		ICFLibKeyHash256 argKey );
 	/**
 	 *	Delete the License instances identified by the key LicnTenantIdx.
 	 *
@@ -164,7 +164,7 @@ public interface ICFIntPubLicenseTable
 	 *		no such existing key value.
 	 */
 	public ICFIntPubLicense pubreadDerived( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Lock the derived License record instance by primary key.
@@ -177,7 +177,7 @@ public interface ICFIntPubLicenseTable
 	 *		no such existing key value.
 	 */
 	public ICFIntPubLicense publockDerived( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Read all License instances.
@@ -254,7 +254,7 @@ public interface ICFIntPubLicenseTable
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
 	public ICFIntPubLicense pubreadRec( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Lock the specific License record instance identified by the primary key.
@@ -269,7 +269,7 @@ public interface ICFIntPubLicenseTable
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
 	public ICFIntPubLicense publockRec( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Read all the specific License record instances.

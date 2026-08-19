@@ -97,7 +97,7 @@ public interface ICFIntPubTopDomainTableObj
 	 *	@return	The TopDomain-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFIntPubTopDomainObj readTopDomain( CFLibDbKeyHash256 pkey );
+	ICFIntPubTopDomainObj readTopDomain( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Read a TopDomain-derived instance by it's primary key.
@@ -107,19 +107,19 @@ public interface ICFIntPubTopDomainTableObj
 	 *	@return	The TopDomain-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFIntPubTopDomainObj readTopDomain( CFLibDbKeyHash256 pkey,
+	ICFIntPubTopDomainObj readTopDomain( ICFLibKeyHash256 pkey,
 		boolean forceRead );
 
-	ICFIntPubTopDomainObj readCachedTopDomain( CFLibDbKeyHash256 pkey );
+	ICFIntPubTopDomainObj readCachedTopDomain( ICFLibKeyHash256 pkey );
 
 	public void reallyDeepDisposeTopDomain( ICFIntPubTopDomainObj obj );
 
-	void deepDisposeTopDomain( CFLibDbKeyHash256 pkey );
+	void deepDisposeTopDomain( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Internal use only.
 	 */
-	ICFIntPubTopDomainObj lockTopDomain( CFLibDbKeyHash256 pkey );
+	ICFIntPubTopDomainObj lockTopDomain( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Return a sorted list of all the TopDomain-derived instances in the database.

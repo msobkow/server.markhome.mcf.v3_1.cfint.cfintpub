@@ -97,7 +97,7 @@ public interface ICFIntPubMinorVersionTableObj
 	 *	@return	The MinorVersion-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFIntPubMinorVersionObj readMinorVersion( CFLibDbKeyHash256 pkey );
+	ICFIntPubMinorVersionObj readMinorVersion( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Read a MinorVersion-derived instance by it's primary key.
@@ -107,19 +107,19 @@ public interface ICFIntPubMinorVersionTableObj
 	 *	@return	The MinorVersion-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFIntPubMinorVersionObj readMinorVersion( CFLibDbKeyHash256 pkey,
+	ICFIntPubMinorVersionObj readMinorVersion( ICFLibKeyHash256 pkey,
 		boolean forceRead );
 
-	ICFIntPubMinorVersionObj readCachedMinorVersion( CFLibDbKeyHash256 pkey );
+	ICFIntPubMinorVersionObj readCachedMinorVersion( ICFLibKeyHash256 pkey );
 
 	public void reallyDeepDisposeMinorVersion( ICFIntPubMinorVersionObj obj );
 
-	void deepDisposeMinorVersion( CFLibDbKeyHash256 pkey );
+	void deepDisposeMinorVersion( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Internal use only.
 	 */
-	ICFIntPubMinorVersionObj lockMinorVersion( CFLibDbKeyHash256 pkey );
+	ICFIntPubMinorVersionObj lockMinorVersion( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Return a sorted list of all the MinorVersion-derived instances in the database.

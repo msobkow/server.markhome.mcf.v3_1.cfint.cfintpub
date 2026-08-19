@@ -90,7 +90,7 @@ public interface ICFIntPubTopProjectTable
 	 *	@param	argKey	The primary key identifying the instance to be deleted.
 	 */
 	public void pubdeleteTopProjectByIdIdx( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 argKey );
+		ICFLibKeyHash256 argKey );
 	/**
 	 *	Delete the TopProject instances identified by the key TenantIdx.
 	 *
@@ -164,7 +164,7 @@ public interface ICFIntPubTopProjectTable
 	 *		no such existing key value.
 	 */
 	public ICFIntPubTopProject pubreadDerived( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Lock the derived TopProject record instance by primary key.
@@ -177,7 +177,7 @@ public interface ICFIntPubTopProjectTable
 	 *		no such existing key value.
 	 */
 	public ICFIntPubTopProject publockDerived( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Read all TopProject instances.
@@ -254,7 +254,7 @@ public interface ICFIntPubTopProjectTable
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
 	public ICFIntPubTopProject pubreadRec( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Lock the specific TopProject record instance identified by the primary key.
@@ -269,7 +269,7 @@ public interface ICFIntPubTopProjectTable
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
 	public ICFIntPubTopProject publockRec( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Read all the specific TopProject record instances.

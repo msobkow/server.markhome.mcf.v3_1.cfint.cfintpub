@@ -97,7 +97,7 @@ public interface ICFIntPubTopProjectTableObj
 	 *	@return	The TopProject-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFIntPubTopProjectObj readTopProject( CFLibDbKeyHash256 pkey );
+	ICFIntPubTopProjectObj readTopProject( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Read a TopProject-derived instance by it's primary key.
@@ -107,19 +107,19 @@ public interface ICFIntPubTopProjectTableObj
 	 *	@return	The TopProject-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFIntPubTopProjectObj readTopProject( CFLibDbKeyHash256 pkey,
+	ICFIntPubTopProjectObj readTopProject( ICFLibKeyHash256 pkey,
 		boolean forceRead );
 
-	ICFIntPubTopProjectObj readCachedTopProject( CFLibDbKeyHash256 pkey );
+	ICFIntPubTopProjectObj readCachedTopProject( ICFLibKeyHash256 pkey );
 
 	public void reallyDeepDisposeTopProject( ICFIntPubTopProjectObj obj );
 
-	void deepDisposeTopProject( CFLibDbKeyHash256 pkey );
+	void deepDisposeTopProject( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Internal use only.
 	 */
-	ICFIntPubTopProjectObj lockTopProject( CFLibDbKeyHash256 pkey );
+	ICFIntPubTopProjectObj lockTopProject( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Return a sorted list of all the TopProject-derived instances in the database.

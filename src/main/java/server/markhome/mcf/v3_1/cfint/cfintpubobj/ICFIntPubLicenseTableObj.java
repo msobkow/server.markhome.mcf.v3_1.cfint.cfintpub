@@ -97,7 +97,7 @@ public interface ICFIntPubLicenseTableObj
 	 *	@return	The License-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFIntPubLicenseObj readLicense( CFLibDbKeyHash256 pkey );
+	ICFIntPubLicenseObj readLicense( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Read a License-derived instance by it's primary key.
@@ -107,19 +107,19 @@ public interface ICFIntPubLicenseTableObj
 	 *	@return	The License-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFIntPubLicenseObj readLicense( CFLibDbKeyHash256 pkey,
+	ICFIntPubLicenseObj readLicense( ICFLibKeyHash256 pkey,
 		boolean forceRead );
 
-	ICFIntPubLicenseObj readCachedLicense( CFLibDbKeyHash256 pkey );
+	ICFIntPubLicenseObj readCachedLicense( ICFLibKeyHash256 pkey );
 
 	public void reallyDeepDisposeLicense( ICFIntPubLicenseObj obj );
 
-	void deepDisposeLicense( CFLibDbKeyHash256 pkey );
+	void deepDisposeLicense( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Internal use only.
 	 */
-	ICFIntPubLicenseObj lockLicense( CFLibDbKeyHash256 pkey );
+	ICFIntPubLicenseObj lockLicense( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Return a sorted list of all the License-derived instances in the database.

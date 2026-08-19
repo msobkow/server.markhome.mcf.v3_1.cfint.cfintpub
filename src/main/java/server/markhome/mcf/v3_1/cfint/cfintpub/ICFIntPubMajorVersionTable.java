@@ -90,7 +90,7 @@ public interface ICFIntPubMajorVersionTable
 	 *	@param	argKey	The primary key identifying the instance to be deleted.
 	 */
 	public void pubdeleteMajorVersionByIdIdx( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 argKey );
+		ICFLibKeyHash256 argKey );
 	/**
 	 *	Delete the MajorVersion instances identified by the key TenantIdx.
 	 *
@@ -164,7 +164,7 @@ public interface ICFIntPubMajorVersionTable
 	 *		no such existing key value.
 	 */
 	public ICFIntPubMajorVersion pubreadDerived( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Lock the derived MajorVersion record instance by primary key.
@@ -177,7 +177,7 @@ public interface ICFIntPubMajorVersionTable
 	 *		no such existing key value.
 	 */
 	public ICFIntPubMajorVersion publockDerived( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Read all MajorVersion instances.
@@ -254,7 +254,7 @@ public interface ICFIntPubMajorVersionTable
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
 	public ICFIntPubMajorVersion pubreadRec( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Lock the specific MajorVersion record instance identified by the primary key.
@@ -269,7 +269,7 @@ public interface ICFIntPubMajorVersionTable
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
 	public ICFIntPubMajorVersion publockRec( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Read all the specific MajorVersion record instances.
