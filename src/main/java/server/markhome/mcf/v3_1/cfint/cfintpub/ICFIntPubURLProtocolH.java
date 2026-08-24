@@ -67,7 +67,7 @@ public interface ICFIntPubURLProtocolH
 	public CFLibDbKeyHash256 getAuditSessionId();
 	public void setAuditSessionId(CFLibDbKeyHash256 auditSessionId);
 
-	public int getRequiredURLProtocolId();
+	public $implIJavaAtomType first implIJavaAtomType each implCommaIJavaAtomType empty empty )$ getRequiredURLProtocolId();
 	public void setRequiredURLProtocolId( int requiredURLProtocolId );
 
 	public String getRequiredName();

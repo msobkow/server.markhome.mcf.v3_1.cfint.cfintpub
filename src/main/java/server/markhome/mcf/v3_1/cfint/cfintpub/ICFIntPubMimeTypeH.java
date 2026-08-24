@@ -67,7 +67,7 @@ public interface ICFIntPubMimeTypeH
 	public CFLibDbKeyHash256 getAuditSessionId();
 	public void setAuditSessionId(CFLibDbKeyHash256 auditSessionId);
 
-	public int getRequiredMimeTypeId();
+	public $implIJavaAtomType first implIJavaAtomType each implCommaIJavaAtomType empty empty )$ getRequiredMimeTypeId();
 	public void setRequiredMimeTypeId( int requiredMimeTypeId );
 
 	public String getRequiredName();
