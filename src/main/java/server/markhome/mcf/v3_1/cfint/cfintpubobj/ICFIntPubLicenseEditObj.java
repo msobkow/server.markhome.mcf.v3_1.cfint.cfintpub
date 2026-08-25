@@ -84,42 +84,42 @@ public interface ICFIntPubLicenseEditObj
 	 *
 	 *	@return	The ICFSecPubTenantObj instance referenced by the Tenant key.
 	 */
-	ICFSecPubTenantObj get$OptionalOrRequired$OwnerTenant();
+	ICFSecPubTenantObj getRequiredOwnerTenant();
 
 	/**
-	 *	Get the $optionalorrequired$ ICFSecPubTenantObj instance referenced by the Tenant key.
+	 *	Get the required ICFSecPubTenantObj instance referenced by the Tenant key.
 	 *
-	 *	@return	The $optionalorrequired$ ICFSecPubTenantObj instance referenced by the Tenant key.
+	 *	@return	The required ICFSecPubTenantObj instance referenced by the Tenant key.
 	 */
-	ICFSecPubTenantObj get$OptionalOrRequired$OwnerTenant( boolean forceRead );
+	ICFSecPubTenantObj getRequiredOwnerTenant( boolean forceRead );
 
 	/**
 	 *	Set the ICFSecPubTenantObj instance referenced by the Tenant key.
 	 *
 	 *	@param	value	the ICFSecPubTenantObj instance to be referenced by the Tenant key.
 	 */
-	void set$OptionalOrRequired$OwnerTenant( ICFSecPubTenantObj value );
+	void setRequiredOwnerTenant( ICFSecPubTenantObj value );
 
 	/**
 	 *	Get the ICFIntPubTopDomainObj instance referenced by the TopDomain key.
 	 *
 	 *	@return	The ICFIntPubTopDomainObj instance referenced by the TopDomain key.
 	 */
-	ICFIntPubTopDomainObj get$OptionalOrRequired$ContainerTopDomain();
+	ICFIntPubTopDomainObj getRequiredContainerTopDomain();
 
 	/**
-	 *	Get the $optionalorrequired$ ICFIntPubTopDomainObj instance referenced by the TopDomain key.
+	 *	Get the required ICFIntPubTopDomainObj instance referenced by the TopDomain key.
 	 *
-	 *	@return	The $optionalorrequired$ ICFIntPubTopDomainObj instance referenced by the TopDomain key.
+	 *	@return	The required ICFIntPubTopDomainObj instance referenced by the TopDomain key.
 	 */
-	ICFIntPubTopDomainObj get$OptionalOrRequired$ContainerTopDomain( boolean forceRead );
+	ICFIntPubTopDomainObj getRequiredContainerTopDomain( boolean forceRead );
 
 	/**
 	 *	Set the ICFIntPubTopDomainObj instance referenced by the TopDomain key.
 	 *
 	 *	@param	value	the ICFIntPubTopDomainObj instance to be referenced by the TopDomain key.
 	 */
-	void set$OptionalOrRequired$ContainerTopDomain( ICFIntPubTopDomainObj value );
+	void setRequiredContainerTopDomain( ICFIntPubTopDomainObj value );
 
 	/**
 	 *	Get the required CFLibDbKeyHash256 attribute Id.

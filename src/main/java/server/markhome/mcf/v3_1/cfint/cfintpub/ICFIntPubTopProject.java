@@ -78,21 +78,21 @@ public interface ICFIntPubTopProject
 
 	public ICFLibKeyHash256 getPKey();
 	public void setPKey(ICFLibKeyHash256 requiredId);
-	public List<ICFIntPubSubProject> get$OptionalOrRequired$ComponentsSubProject();
+	public List<ICFIntPubSubProject> getOptionalComponentsSubProject();
 
 	public CFLibDbKeyHash256 getRequiredId();
 	public void setRequiredId( CFLibDbKeyHash256 value );
 	public int getRequiredRevision();
 	public void setRequiredRevision( int value );
 
-	public ICFSecPubTenant get$OptionalOrRequired$OwnerTenant();
+	public ICFSecPubTenant getRequiredOwnerTenant();
 
-	public void set$OptionalOrRequired$OwnerTenant($implIJavaAtomType$ argTenantId);
+	public void setRequiredOwnerTenant(ICFLibKeyHash256 argTenantId);
 
-	public ICFIntPubTopDomain get$OptionalOrRequired$ContainerParentSDom();
+	public ICFIntPubTopDomain getRequiredContainerParentSDom();
 
-	public void set$OptionalOrRequired$ContainerParentSDom(ICFIntPubTopDomain argObj);
-	public void set$OptionalOrRequired$ContainerParentSDom($implIJavaAtomType$ argTopDomainId);
+	public void setRequiredContainerParentSDom(ICFIntPubTopDomain argObj);
+	public void setRequiredContainerParentSDom(ICFLibKeyHash256 argTopDomainId);
 
 	public CFLibDbKeyHash256 getRequiredTenantId();
 	public void setRequiredTenantId( CFLibDbKeyHash256 value );

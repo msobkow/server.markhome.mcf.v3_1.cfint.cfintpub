@@ -112,28 +112,28 @@ public interface ICFIntPubTldEditObj
 	 *
 	 *	@return	The ICFSecPubTenantObj instance referenced by the Tenant key.
 	 */
-	ICFSecPubTenantObj get$OptionalOrRequired$ContainerTenant();
+	ICFSecPubTenantObj getRequiredContainerTenant();
 
 	/**
-	 *	Get the $optionalorrequired$ ICFSecPubTenantObj instance referenced by the Tenant key.
+	 *	Get the required ICFSecPubTenantObj instance referenced by the Tenant key.
 	 *
-	 *	@return	The $optionalorrequired$ ICFSecPubTenantObj instance referenced by the Tenant key.
+	 *	@return	The required ICFSecPubTenantObj instance referenced by the Tenant key.
 	 */
-	ICFSecPubTenantObj get$OptionalOrRequired$ContainerTenant( boolean forceRead );
+	ICFSecPubTenantObj getRequiredContainerTenant( boolean forceRead );
 
 	/**
 	 *	Set the ICFSecPubTenantObj instance referenced by the Tenant key.
 	 *
 	 *	@param	value	the ICFSecPubTenantObj instance to be referenced by the Tenant key.
 	 */
-	void set$OptionalOrRequired$ContainerTenant( ICFSecPubTenantObj value );
+	void setRequiredContainerTenant( ICFSecPubTenantObj value );
 
 	/**
 	 *	Get a list ICFIntPubTopDomainObj instances referenced by the TopDomain key.
 	 *
 	 *	@return	The (potentially empty) list of ICFIntPubTopDomainObj instances referenced by the TopDomain key.
 	 */
-	List<ICFIntPubTopDomainObj> get$OptionalOrRequired$ComponentsTopDomain();
+	List<ICFIntPubTopDomainObj> getOptionalComponentsTopDomain();
 
 	/**
 	 *	Get the required CFLibDbKeyHash256 attribute Id.

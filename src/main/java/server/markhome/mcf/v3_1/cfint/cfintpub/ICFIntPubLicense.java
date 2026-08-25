@@ -65,14 +65,14 @@ public interface ICFIntPubLicense
 	public int getRequiredRevision();
 	public void setRequiredRevision( int value );
 
-	public ICFSecPubTenant get$OptionalOrRequired$OwnerTenant();
+	public ICFSecPubTenant getRequiredOwnerTenant();
 
-	public void set$OptionalOrRequired$OwnerTenant($implIJavaAtomType$ argTenantId);
+	public void setRequiredOwnerTenant(ICFLibKeyHash256 argTenantId);
 
-	public ICFIntPubTopDomain get$OptionalOrRequired$ContainerTopDomain();
+	public ICFIntPubTopDomain getRequiredContainerTopDomain();
 
-	public void set$OptionalOrRequired$ContainerTopDomain(ICFIntPubTopDomain argObj);
-	public void set$OptionalOrRequired$ContainerTopDomain($implIJavaAtomType$ argTopDomainId);
+	public void setRequiredContainerTopDomain(ICFIntPubTopDomain argObj);
+	public void setRequiredContainerTopDomain(ICFLibKeyHash256 argTopDomainId);
 
 	public CFLibDbKeyHash256 getRequiredTenantId();
 	public void setRequiredTenantId( CFLibDbKeyHash256 value );

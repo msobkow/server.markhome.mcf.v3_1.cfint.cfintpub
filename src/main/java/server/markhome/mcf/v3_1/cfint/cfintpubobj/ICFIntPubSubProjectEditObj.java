@@ -112,49 +112,49 @@ public interface ICFIntPubSubProjectEditObj
 	 *
 	 *	@return	The ICFSecPubTenantObj instance referenced by the Tenant key.
 	 */
-	ICFSecPubTenantObj get$OptionalOrRequired$OwnerTenant();
+	ICFSecPubTenantObj getRequiredOwnerTenant();
 
 	/**
-	 *	Get the $optionalorrequired$ ICFSecPubTenantObj instance referenced by the Tenant key.
+	 *	Get the required ICFSecPubTenantObj instance referenced by the Tenant key.
 	 *
-	 *	@return	The $optionalorrequired$ ICFSecPubTenantObj instance referenced by the Tenant key.
+	 *	@return	The required ICFSecPubTenantObj instance referenced by the Tenant key.
 	 */
-	ICFSecPubTenantObj get$OptionalOrRequired$OwnerTenant( boolean forceRead );
+	ICFSecPubTenantObj getRequiredOwnerTenant( boolean forceRead );
 
 	/**
 	 *	Set the ICFSecPubTenantObj instance referenced by the Tenant key.
 	 *
 	 *	@param	value	the ICFSecPubTenantObj instance to be referenced by the Tenant key.
 	 */
-	void set$OptionalOrRequired$OwnerTenant( ICFSecPubTenantObj value );
+	void setRequiredOwnerTenant( ICFSecPubTenantObj value );
 
 	/**
 	 *	Get the ICFIntPubTopProjectObj instance referenced by the ParentTPrj key.
 	 *
 	 *	@return	The ICFIntPubTopProjectObj instance referenced by the ParentTPrj key.
 	 */
-	ICFIntPubTopProjectObj get$OptionalOrRequired$ContainerParentTPrj();
+	ICFIntPubTopProjectObj getRequiredContainerParentTPrj();
 
 	/**
-	 *	Get the $optionalorrequired$ ICFIntPubTopProjectObj instance referenced by the ParentTPrj key.
+	 *	Get the required ICFIntPubTopProjectObj instance referenced by the ParentTPrj key.
 	 *
-	 *	@return	The $optionalorrequired$ ICFIntPubTopProjectObj instance referenced by the ParentTPrj key.
+	 *	@return	The required ICFIntPubTopProjectObj instance referenced by the ParentTPrj key.
 	 */
-	ICFIntPubTopProjectObj get$OptionalOrRequired$ContainerParentTPrj( boolean forceRead );
+	ICFIntPubTopProjectObj getRequiredContainerParentTPrj( boolean forceRead );
 
 	/**
 	 *	Set the ICFIntPubTopProjectObj instance referenced by the ParentTPrj key.
 	 *
 	 *	@param	value	the ICFIntPubTopProjectObj instance to be referenced by the ParentTPrj key.
 	 */
-	void set$OptionalOrRequired$ContainerParentTPrj( ICFIntPubTopProjectObj value );
+	void setRequiredContainerParentTPrj( ICFIntPubTopProjectObj value );
 
 	/**
 	 *	Get a list ICFIntPubMajorVersionObj instances referenced by the MajorVer key.
 	 *
 	 *	@return	The (potentially empty) list of ICFIntPubMajorVersionObj instances referenced by the MajorVer key.
 	 */
-	List<ICFIntPubMajorVersionObj> get$OptionalOrRequired$ComponentsMajorVer();
+	List<ICFIntPubMajorVersionObj> getOptionalComponentsMajorVer();
 
 	/**
 	 *	Get the required CFLibDbKeyHash256 attribute Id.

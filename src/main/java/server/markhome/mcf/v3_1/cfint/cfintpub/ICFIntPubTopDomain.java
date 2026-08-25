@@ -78,23 +78,23 @@ public interface ICFIntPubTopDomain
 
 	public ICFLibKeyHash256 getPKey();
 	public void setPKey(ICFLibKeyHash256 requiredId);
-	public List<ICFIntPubTopProject> get$OptionalOrRequired$ComponentsTopProject();
+	public List<ICFIntPubTopProject> getOptionalComponentsTopProject();
 
-	public List<ICFIntPubLicense> get$OptionalOrRequired$ComponentsLicense();
+	public List<ICFIntPubLicense> getOptionalComponentsLicense();
 
 	public CFLibDbKeyHash256 getRequiredId();
 	public void setRequiredId( CFLibDbKeyHash256 value );
 	public int getRequiredRevision();
 	public void setRequiredRevision( int value );
 
-	public ICFSecPubTenant get$OptionalOrRequired$OwnerTenant();
+	public ICFSecPubTenant getRequiredOwnerTenant();
 
-	public void set$OptionalOrRequired$OwnerTenant($implIJavaAtomType$ argTenantId);
+	public void setRequiredOwnerTenant(ICFLibKeyHash256 argTenantId);
 
-	public ICFIntPubTld get$OptionalOrRequired$ContainerParentTld();
+	public ICFIntPubTld getRequiredContainerParentTld();
 
-	public void set$OptionalOrRequired$ContainerParentTld(ICFIntPubTld argObj);
-	public void set$OptionalOrRequired$ContainerParentTld($implIJavaAtomType$ argTldId);
+	public void setRequiredContainerParentTld(ICFIntPubTld argObj);
+	public void setRequiredContainerParentTld(ICFLibKeyHash256 argTldId);
 
 	public CFLibDbKeyHash256 getRequiredTenantId();
 	public void setRequiredTenantId( CFLibDbKeyHash256 value );

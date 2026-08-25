@@ -83,14 +83,14 @@ public interface ICFIntPubMinorVersion
 	public int getRequiredRevision();
 	public void setRequiredRevision( int value );
 
-	public ICFSecPubTenant get$OptionalOrRequired$OwnerTenant();
+	public ICFSecPubTenant getRequiredOwnerTenant();
 
-	public void set$OptionalOrRequired$OwnerTenant($implIJavaAtomType$ argTenantId);
+	public void setRequiredOwnerTenant(ICFLibKeyHash256 argTenantId);
 
-	public ICFIntPubMajorVersion get$OptionalOrRequired$ContainerParentMajVer();
+	public ICFIntPubMajorVersion getRequiredContainerParentMajVer();
 
-	public void set$OptionalOrRequired$ContainerParentMajVer(ICFIntPubMajorVersion argObj);
-	public void set$OptionalOrRequired$ContainerParentMajVer($implIJavaAtomType$ argMajorVersionId);
+	public void setRequiredContainerParentMajVer(ICFIntPubMajorVersion argObj);
+	public void setRequiredContainerParentMajVer(ICFLibKeyHash256 argMajorVersionId);
 
 	public CFLibDbKeyHash256 getRequiredTenantId();
 	public void setRequiredTenantId( CFLibDbKeyHash256 value );

@@ -78,21 +78,21 @@ public interface ICFIntPubMajorVersion
 
 	public ICFLibKeyHash256 getPKey();
 	public void setPKey(ICFLibKeyHash256 requiredId);
-	public List<ICFIntPubMinorVersion> get$OptionalOrRequired$ComponentsMinorVer();
+	public List<ICFIntPubMinorVersion> getOptionalComponentsMinorVer();
 
 	public CFLibDbKeyHash256 getRequiredId();
 	public void setRequiredId( CFLibDbKeyHash256 value );
 	public int getRequiredRevision();
 	public void setRequiredRevision( int value );
 
-	public ICFSecPubTenant get$OptionalOrRequired$OwnerTenant();
+	public ICFSecPubTenant getRequiredOwnerTenant();
 
-	public void set$OptionalOrRequired$OwnerTenant($implIJavaAtomType$ argTenantId);
+	public void setRequiredOwnerTenant(ICFLibKeyHash256 argTenantId);
 
-	public ICFIntPubSubProject get$OptionalOrRequired$ContainerParentSPrj();
+	public ICFIntPubSubProject getRequiredContainerParentSPrj();
 
-	public void set$OptionalOrRequired$ContainerParentSPrj(ICFIntPubSubProject argObj);
-	public void set$OptionalOrRequired$ContainerParentSPrj($implIJavaAtomType$ argSubProjectId);
+	public void setRequiredContainerParentSPrj(ICFIntPubSubProject argObj);
+	public void setRequiredContainerParentSPrj(ICFLibKeyHash256 argSubProjectId);
 
 	public CFLibDbKeyHash256 getRequiredTenantId();
 	public void setRequiredTenantId( CFLibDbKeyHash256 value );

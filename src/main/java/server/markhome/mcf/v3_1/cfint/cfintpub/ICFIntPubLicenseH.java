@@ -58,7 +58,7 @@ public interface ICFIntPubLicenseH
 	public CFLibDbKeyHash256 getAuditSessionId();
 	public void setAuditSessionId(CFLibDbKeyHash256 auditSessionId);
 
-	public $implIJavaAtomType$ getRequiredId();
+	public ICFLibKeyHash256 getRequiredId();
 	public void setRequiredId( ICFLibKeyHash256 requiredId );
 
 	public CFLibDbKeyHash256 getRequiredTenantId();

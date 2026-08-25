@@ -76,16 +76,16 @@ public interface ICFIntPubTld
 
 	public ICFLibKeyHash256 getPKey();
 	public void setPKey(ICFLibKeyHash256 requiredId);
-	public List<ICFIntPubTopDomain> get$OptionalOrRequired$ComponentsTopDomain();
+	public List<ICFIntPubTopDomain> getOptionalComponentsTopDomain();
 
 	public CFLibDbKeyHash256 getRequiredId();
 	public void setRequiredId( CFLibDbKeyHash256 value );
 	public int getRequiredRevision();
 	public void setRequiredRevision( int value );
 
-	public ICFSecPubTenant get$OptionalOrRequired$ContainerTenant();
+	public ICFSecPubTenant getRequiredContainerTenant();
 
-	public void set$OptionalOrRequired$ContainerTenant($implIJavaAtomType$ argTenantId);
+	public void setRequiredContainerTenant(ICFLibKeyHash256 argTenantId);
 
 	public CFLibDbKeyHash256 getRequiredTenantId();
 	public void setRequiredTenantId( CFLibDbKeyHash256 value );
