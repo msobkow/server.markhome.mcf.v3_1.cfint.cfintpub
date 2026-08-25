@@ -187,32 +187,32 @@ public interface ICFIntPubLicenseObj
 	void setIsNew( boolean value );
 
 	/**
-	 *	Get the required ICFIntPubTenantObj instance referenced by the Tenant key.
+	 *	Get the $optionalorrequired$ ICFIntPubTenantObj instance referenced by the Tenant key.
 	 *
-	 *	@return	The required ICFIntPubTenantObj instance referenced by the Tenant key.
+	 *	@return	The $optionalorrequired$ ICFIntPubTenantObj instance referenced by the Tenant key.
 	 */
-	ICFSecPubTenantObj getRequiredOwnerTenant();
+	ICFSecPubTenantObj get$OptionalOrRequired$OwnerTenant();
 
 	/**
-	 *	Get the required ICFSecPubTenantObj instance referenced by the Tenant key.
+	 *	Get the $optionalorrequired$ ICFSecPubTenantObj instance referenced by the Tenant key.
 	 *
-	 *	@return	The required ICFSecPubTenantObj instance referenced by the Tenant key.
+	 *	@return	The $optionalorrequired$ ICFSecPubTenantObj instance referenced by the Tenant key.
 	 */
-	ICFSecPubTenantObj getRequiredOwnerTenant( boolean forceRead );
+	ICFSecPubTenantObj get$OptionalOrRequired$OwnerTenant( boolean forceRead );
 
 	/**
-	 *	Get the required ICFIntPubTopDomainObj instance referenced by the TopDomain key.
+	 *	Get the $optionalorrequired$ ICFIntPubTopDomainObj instance referenced by the TopDomain key.
 	 *
-	 *	@return	The required ICFIntPubTopDomainObj instance referenced by the TopDomain key.
+	 *	@return	The $optionalorrequired$ ICFIntPubTopDomainObj instance referenced by the TopDomain key.
 	 */
-	ICFIntPubTopDomainObj getRequiredContainerTopDomain();
+	ICFIntPubTopDomainObj get$OptionalOrRequired$ContainerTopDomain();
 
 	/**
-	 *	Get the required ICFIntPubTopDomainObj instance referenced by the TopDomain key.
+	 *	Get the $optionalorrequired$ ICFIntPubTopDomainObj instance referenced by the TopDomain key.
 	 *
-	 *	@return	The required ICFIntPubTopDomainObj instance referenced by the TopDomain key.
+	 *	@return	The $optionalorrequired$ ICFIntPubTopDomainObj instance referenced by the TopDomain key.
 	 */
-	ICFIntPubTopDomainObj getRequiredContainerTopDomain( boolean forceRead );
+	ICFIntPubTopDomainObj get$OptionalOrRequired$ContainerTopDomain( boolean forceRead );
 
 	/**
 	 *	Get the required CFLibDbKeyHash256 attribute Id.

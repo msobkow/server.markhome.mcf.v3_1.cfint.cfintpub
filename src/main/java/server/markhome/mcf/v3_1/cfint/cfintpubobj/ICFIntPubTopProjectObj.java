@@ -214,46 +214,46 @@ public interface ICFIntPubTopProjectObj
 	void setIsNew( boolean value );
 
 	/**
-	 *	Get the required ICFIntPubTenantObj instance referenced by the Tenant key.
+	 *	Get the $optionalorrequired$ ICFIntPubTenantObj instance referenced by the Tenant key.
 	 *
-	 *	@return	The required ICFIntPubTenantObj instance referenced by the Tenant key.
+	 *	@return	The $optionalorrequired$ ICFIntPubTenantObj instance referenced by the Tenant key.
 	 */
-	ICFSecPubTenantObj getRequiredOwnerTenant();
+	ICFSecPubTenantObj get$OptionalOrRequired$OwnerTenant();
 
 	/**
-	 *	Get the required ICFSecPubTenantObj instance referenced by the Tenant key.
+	 *	Get the $optionalorrequired$ ICFSecPubTenantObj instance referenced by the Tenant key.
 	 *
-	 *	@return	The required ICFSecPubTenantObj instance referenced by the Tenant key.
+	 *	@return	The $optionalorrequired$ ICFSecPubTenantObj instance referenced by the Tenant key.
 	 */
-	ICFSecPubTenantObj getRequiredOwnerTenant( boolean forceRead );
+	ICFSecPubTenantObj get$OptionalOrRequired$OwnerTenant( boolean forceRead );
 
 	/**
-	 *	Get the required ICFIntPubTopDomainObj instance referenced by the ParentSDom key.
+	 *	Get the $optionalorrequired$ ICFIntPubTopDomainObj instance referenced by the ParentSDom key.
 	 *
-	 *	@return	The required ICFIntPubTopDomainObj instance referenced by the ParentSDom key.
+	 *	@return	The $optionalorrequired$ ICFIntPubTopDomainObj instance referenced by the ParentSDom key.
 	 */
-	ICFIntPubTopDomainObj getRequiredContainerParentSDom();
+	ICFIntPubTopDomainObj get$OptionalOrRequired$ContainerParentSDom();
 
 	/**
-	 *	Get the required ICFIntPubTopDomainObj instance referenced by the ParentSDom key.
+	 *	Get the $optionalorrequired$ ICFIntPubTopDomainObj instance referenced by the ParentSDom key.
 	 *
-	 *	@return	The required ICFIntPubTopDomainObj instance referenced by the ParentSDom key.
+	 *	@return	The $optionalorrequired$ ICFIntPubTopDomainObj instance referenced by the ParentSDom key.
 	 */
-	ICFIntPubTopDomainObj getRequiredContainerParentSDom( boolean forceRead );
+	ICFIntPubTopDomainObj get$OptionalOrRequired$ContainerParentSDom( boolean forceRead );
 
 	/**
-	 *	Get the array of optional ICFIntPubSubProjectObj array of instances referenced by the SubProject key.
+	 *	Get the array of $optionalorrequired$ ICFIntPubSubProjectObj array of instances referenced by the SubProject key.
 	 *
-	 *	@return	The optional ICFIntPubSubProjectObj[] array of instances referenced by the SubProject key.
+	 *	@return	The $optionalorrequired$ ICFIntPubSubProjectObj[] array of instances referenced by the SubProject key.
 	 */
-	List<ICFIntPubSubProjectObj> getOptionalComponentsSubProject();
+	List<ICFIntPubSubProjectObj> get$OptionalOrRequired$ComponentsSubProject();
 
 	/**
-	 *	Get the array of optional ICFIntPubSubProjectObj array of instances referenced by the SubProject key.
+	 *	Get the array of $optionalorrequired$ ICFIntPubSubProjectObj array of instances referenced by the SubProject key.
 	 *
-	 *	@return	The optional ICFIntPubSubProjectObj[] array of instances referenced by the SubProject key.
+	 *	@return	The $optionalorrequired$ ICFIntPubSubProjectObj[] array of instances referenced by the SubProject key.
 	 */
-	List<ICFIntPubSubProjectObj> getOptionalComponentsSubProject( boolean forceRead );
+	List<ICFIntPubSubProjectObj> get$OptionalOrRequired$ComponentsSubProject( boolean forceRead );
 
 	/**
 	 *	Get the required CFLibDbKeyHash256 attribute Id.

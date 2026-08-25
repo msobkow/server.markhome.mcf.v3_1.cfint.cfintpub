@@ -214,46 +214,46 @@ public interface ICFIntPubMajorVersionObj
 	void setIsNew( boolean value );
 
 	/**
-	 *	Get the required ICFIntPubTenantObj instance referenced by the Tenant key.
+	 *	Get the $optionalorrequired$ ICFIntPubTenantObj instance referenced by the Tenant key.
 	 *
-	 *	@return	The required ICFIntPubTenantObj instance referenced by the Tenant key.
+	 *	@return	The $optionalorrequired$ ICFIntPubTenantObj instance referenced by the Tenant key.
 	 */
-	ICFSecPubTenantObj getRequiredOwnerTenant();
+	ICFSecPubTenantObj get$OptionalOrRequired$OwnerTenant();
 
 	/**
-	 *	Get the required ICFSecPubTenantObj instance referenced by the Tenant key.
+	 *	Get the $optionalorrequired$ ICFSecPubTenantObj instance referenced by the Tenant key.
 	 *
-	 *	@return	The required ICFSecPubTenantObj instance referenced by the Tenant key.
+	 *	@return	The $optionalorrequired$ ICFSecPubTenantObj instance referenced by the Tenant key.
 	 */
-	ICFSecPubTenantObj getRequiredOwnerTenant( boolean forceRead );
+	ICFSecPubTenantObj get$OptionalOrRequired$OwnerTenant( boolean forceRead );
 
 	/**
-	 *	Get the required ICFIntPubSubProjectObj instance referenced by the ParentSPrj key.
+	 *	Get the $optionalorrequired$ ICFIntPubSubProjectObj instance referenced by the ParentSPrj key.
 	 *
-	 *	@return	The required ICFIntPubSubProjectObj instance referenced by the ParentSPrj key.
+	 *	@return	The $optionalorrequired$ ICFIntPubSubProjectObj instance referenced by the ParentSPrj key.
 	 */
-	ICFIntPubSubProjectObj getRequiredContainerParentSPrj();
+	ICFIntPubSubProjectObj get$OptionalOrRequired$ContainerParentSPrj();
 
 	/**
-	 *	Get the required ICFIntPubSubProjectObj instance referenced by the ParentSPrj key.
+	 *	Get the $optionalorrequired$ ICFIntPubSubProjectObj instance referenced by the ParentSPrj key.
 	 *
-	 *	@return	The required ICFIntPubSubProjectObj instance referenced by the ParentSPrj key.
+	 *	@return	The $optionalorrequired$ ICFIntPubSubProjectObj instance referenced by the ParentSPrj key.
 	 */
-	ICFIntPubSubProjectObj getRequiredContainerParentSPrj( boolean forceRead );
+	ICFIntPubSubProjectObj get$OptionalOrRequired$ContainerParentSPrj( boolean forceRead );
 
 	/**
-	 *	Get the array of optional ICFIntPubMinorVersionObj array of instances referenced by the MinorVer key.
+	 *	Get the array of $optionalorrequired$ ICFIntPubMinorVersionObj array of instances referenced by the MinorVer key.
 	 *
-	 *	@return	The optional ICFIntPubMinorVersionObj[] array of instances referenced by the MinorVer key.
+	 *	@return	The $optionalorrequired$ ICFIntPubMinorVersionObj[] array of instances referenced by the MinorVer key.
 	 */
-	List<ICFIntPubMinorVersionObj> getOptionalComponentsMinorVer();
+	List<ICFIntPubMinorVersionObj> get$OptionalOrRequired$ComponentsMinorVer();
 
 	/**
-	 *	Get the array of optional ICFIntPubMinorVersionObj array of instances referenced by the MinorVer key.
+	 *	Get the array of $optionalorrequired$ ICFIntPubMinorVersionObj array of instances referenced by the MinorVer key.
 	 *
-	 *	@return	The optional ICFIntPubMinorVersionObj[] array of instances referenced by the MinorVer key.
+	 *	@return	The $optionalorrequired$ ICFIntPubMinorVersionObj[] array of instances referenced by the MinorVer key.
 	 */
-	List<ICFIntPubMinorVersionObj> getOptionalComponentsMinorVer( boolean forceRead );
+	List<ICFIntPubMinorVersionObj> get$OptionalOrRequired$ComponentsMinorVer( boolean forceRead );
 
 	/**
 	 *	Get the required CFLibDbKeyHash256 attribute Id.

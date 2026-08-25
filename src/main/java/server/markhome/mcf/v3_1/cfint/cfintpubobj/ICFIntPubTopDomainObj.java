@@ -214,60 +214,60 @@ public interface ICFIntPubTopDomainObj
 	void setIsNew( boolean value );
 
 	/**
-	 *	Get the required ICFIntPubTenantObj instance referenced by the Tenant key.
+	 *	Get the $optionalorrequired$ ICFIntPubTenantObj instance referenced by the Tenant key.
 	 *
-	 *	@return	The required ICFIntPubTenantObj instance referenced by the Tenant key.
+	 *	@return	The $optionalorrequired$ ICFIntPubTenantObj instance referenced by the Tenant key.
 	 */
-	ICFSecPubTenantObj getRequiredOwnerTenant();
+	ICFSecPubTenantObj get$OptionalOrRequired$OwnerTenant();
 
 	/**
-	 *	Get the required ICFSecPubTenantObj instance referenced by the Tenant key.
+	 *	Get the $optionalorrequired$ ICFSecPubTenantObj instance referenced by the Tenant key.
 	 *
-	 *	@return	The required ICFSecPubTenantObj instance referenced by the Tenant key.
+	 *	@return	The $optionalorrequired$ ICFSecPubTenantObj instance referenced by the Tenant key.
 	 */
-	ICFSecPubTenantObj getRequiredOwnerTenant( boolean forceRead );
+	ICFSecPubTenantObj get$OptionalOrRequired$OwnerTenant( boolean forceRead );
 
 	/**
-	 *	Get the required ICFIntPubTldObj instance referenced by the ParentTld key.
+	 *	Get the $optionalorrequired$ ICFIntPubTldObj instance referenced by the ParentTld key.
 	 *
-	 *	@return	The required ICFIntPubTldObj instance referenced by the ParentTld key.
+	 *	@return	The $optionalorrequired$ ICFIntPubTldObj instance referenced by the ParentTld key.
 	 */
-	ICFIntPubTldObj getRequiredContainerParentTld();
+	ICFIntPubTldObj get$OptionalOrRequired$ContainerParentTld();
 
 	/**
-	 *	Get the required ICFIntPubTldObj instance referenced by the ParentTld key.
+	 *	Get the $optionalorrequired$ ICFIntPubTldObj instance referenced by the ParentTld key.
 	 *
-	 *	@return	The required ICFIntPubTldObj instance referenced by the ParentTld key.
+	 *	@return	The $optionalorrequired$ ICFIntPubTldObj instance referenced by the ParentTld key.
 	 */
-	ICFIntPubTldObj getRequiredContainerParentTld( boolean forceRead );
+	ICFIntPubTldObj get$OptionalOrRequired$ContainerParentTld( boolean forceRead );
 
 	/**
-	 *	Get the array of optional ICFIntPubTopProjectObj array of instances referenced by the TopProject key.
+	 *	Get the array of $optionalorrequired$ ICFIntPubTopProjectObj array of instances referenced by the TopProject key.
 	 *
-	 *	@return	The optional ICFIntPubTopProjectObj[] array of instances referenced by the TopProject key.
+	 *	@return	The $optionalorrequired$ ICFIntPubTopProjectObj[] array of instances referenced by the TopProject key.
 	 */
-	List<ICFIntPubTopProjectObj> getOptionalComponentsTopProject();
+	List<ICFIntPubTopProjectObj> get$OptionalOrRequired$ComponentsTopProject();
 
 	/**
-	 *	Get the array of optional ICFIntPubTopProjectObj array of instances referenced by the TopProject key.
+	 *	Get the array of $optionalorrequired$ ICFIntPubTopProjectObj array of instances referenced by the TopProject key.
 	 *
-	 *	@return	The optional ICFIntPubTopProjectObj[] array of instances referenced by the TopProject key.
+	 *	@return	The $optionalorrequired$ ICFIntPubTopProjectObj[] array of instances referenced by the TopProject key.
 	 */
-	List<ICFIntPubTopProjectObj> getOptionalComponentsTopProject( boolean forceRead );
+	List<ICFIntPubTopProjectObj> get$OptionalOrRequired$ComponentsTopProject( boolean forceRead );
 
 	/**
-	 *	Get the array of optional ICFIntPubLicenseObj array of instances referenced by the License key.
+	 *	Get the array of $optionalorrequired$ ICFIntPubLicenseObj array of instances referenced by the License key.
 	 *
-	 *	@return	The optional ICFIntPubLicenseObj[] array of instances referenced by the License key.
+	 *	@return	The $optionalorrequired$ ICFIntPubLicenseObj[] array of instances referenced by the License key.
 	 */
-	List<ICFIntPubLicenseObj> getOptionalComponentsLicense();
+	List<ICFIntPubLicenseObj> get$OptionalOrRequired$ComponentsLicense();
 
 	/**
-	 *	Get the array of optional ICFIntPubLicenseObj array of instances referenced by the License key.
+	 *	Get the array of $optionalorrequired$ ICFIntPubLicenseObj array of instances referenced by the License key.
 	 *
-	 *	@return	The optional ICFIntPubLicenseObj[] array of instances referenced by the License key.
+	 *	@return	The $optionalorrequired$ ICFIntPubLicenseObj[] array of instances referenced by the License key.
 	 */
-	List<ICFIntPubLicenseObj> getOptionalComponentsLicense( boolean forceRead );
+	List<ICFIntPubLicenseObj> get$OptionalOrRequired$ComponentsLicense( boolean forceRead );
 
 	/**
 	 *	Get the required CFLibDbKeyHash256 attribute Id.

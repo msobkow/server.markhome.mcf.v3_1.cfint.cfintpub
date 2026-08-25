@@ -214,32 +214,32 @@ public interface ICFIntPubMinorVersionObj
 	void setIsNew( boolean value );
 
 	/**
-	 *	Get the required ICFIntPubTenantObj instance referenced by the Tenant key.
+	 *	Get the $optionalorrequired$ ICFIntPubTenantObj instance referenced by the Tenant key.
 	 *
-	 *	@return	The required ICFIntPubTenantObj instance referenced by the Tenant key.
+	 *	@return	The $optionalorrequired$ ICFIntPubTenantObj instance referenced by the Tenant key.
 	 */
-	ICFSecPubTenantObj getRequiredOwnerTenant();
+	ICFSecPubTenantObj get$OptionalOrRequired$OwnerTenant();
 
 	/**
-	 *	Get the required ICFSecPubTenantObj instance referenced by the Tenant key.
+	 *	Get the $optionalorrequired$ ICFSecPubTenantObj instance referenced by the Tenant key.
 	 *
-	 *	@return	The required ICFSecPubTenantObj instance referenced by the Tenant key.
+	 *	@return	The $optionalorrequired$ ICFSecPubTenantObj instance referenced by the Tenant key.
 	 */
-	ICFSecPubTenantObj getRequiredOwnerTenant( boolean forceRead );
+	ICFSecPubTenantObj get$OptionalOrRequired$OwnerTenant( boolean forceRead );
 
 	/**
-	 *	Get the required ICFIntPubMajorVersionObj instance referenced by the ParentMajVer key.
+	 *	Get the $optionalorrequired$ ICFIntPubMajorVersionObj instance referenced by the ParentMajVer key.
 	 *
-	 *	@return	The required ICFIntPubMajorVersionObj instance referenced by the ParentMajVer key.
+	 *	@return	The $optionalorrequired$ ICFIntPubMajorVersionObj instance referenced by the ParentMajVer key.
 	 */
-	ICFIntPubMajorVersionObj getRequiredContainerParentMajVer();
+	ICFIntPubMajorVersionObj get$OptionalOrRequired$ContainerParentMajVer();
 
 	/**
-	 *	Get the required ICFIntPubMajorVersionObj instance referenced by the ParentMajVer key.
+	 *	Get the $optionalorrequired$ ICFIntPubMajorVersionObj instance referenced by the ParentMajVer key.
 	 *
-	 *	@return	The required ICFIntPubMajorVersionObj instance referenced by the ParentMajVer key.
+	 *	@return	The $optionalorrequired$ ICFIntPubMajorVersionObj instance referenced by the ParentMajVer key.
 	 */
-	ICFIntPubMajorVersionObj getRequiredContainerParentMajVer( boolean forceRead );
+	ICFIntPubMajorVersionObj get$OptionalOrRequired$ContainerParentMajVer( boolean forceRead );
 
 	/**
 	 *	Get the required CFLibDbKeyHash256 attribute Id.

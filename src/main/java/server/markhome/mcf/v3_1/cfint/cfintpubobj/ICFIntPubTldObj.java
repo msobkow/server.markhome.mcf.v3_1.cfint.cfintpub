@@ -214,32 +214,32 @@ public interface ICFIntPubTldObj
 	void setIsNew( boolean value );
 
 	/**
-	 *	Get the required ICFIntPubTenantObj instance referenced by the Tenant key.
+	 *	Get the $optionalorrequired$ ICFIntPubTenantObj instance referenced by the Tenant key.
 	 *
-	 *	@return	The required ICFIntPubTenantObj instance referenced by the Tenant key.
+	 *	@return	The $optionalorrequired$ ICFIntPubTenantObj instance referenced by the Tenant key.
 	 */
-	ICFSecPubTenantObj getRequiredContainerTenant();
+	ICFSecPubTenantObj get$OptionalOrRequired$ContainerTenant();
 
 	/**
-	 *	Get the required ICFSecPubTenantObj instance referenced by the Tenant key.
+	 *	Get the $optionalorrequired$ ICFSecPubTenantObj instance referenced by the Tenant key.
 	 *
-	 *	@return	The required ICFSecPubTenantObj instance referenced by the Tenant key.
+	 *	@return	The $optionalorrequired$ ICFSecPubTenantObj instance referenced by the Tenant key.
 	 */
-	ICFSecPubTenantObj getRequiredContainerTenant( boolean forceRead );
+	ICFSecPubTenantObj get$OptionalOrRequired$ContainerTenant( boolean forceRead );
 
 	/**
-	 *	Get the array of optional ICFIntPubTopDomainObj array of instances referenced by the TopDomain key.
+	 *	Get the array of $optionalorrequired$ ICFIntPubTopDomainObj array of instances referenced by the TopDomain key.
 	 *
-	 *	@return	The optional ICFIntPubTopDomainObj[] array of instances referenced by the TopDomain key.
+	 *	@return	The $optionalorrequired$ ICFIntPubTopDomainObj[] array of instances referenced by the TopDomain key.
 	 */
-	List<ICFIntPubTopDomainObj> getOptionalComponentsTopDomain();
+	List<ICFIntPubTopDomainObj> get$OptionalOrRequired$ComponentsTopDomain();
 
 	/**
-	 *	Get the array of optional ICFIntPubTopDomainObj array of instances referenced by the TopDomain key.
+	 *	Get the array of $optionalorrequired$ ICFIntPubTopDomainObj array of instances referenced by the TopDomain key.
 	 *
-	 *	@return	The optional ICFIntPubTopDomainObj[] array of instances referenced by the TopDomain key.
+	 *	@return	The $optionalorrequired$ ICFIntPubTopDomainObj[] array of instances referenced by the TopDomain key.
 	 */
-	List<ICFIntPubTopDomainObj> getOptionalComponentsTopDomain( boolean forceRead );
+	List<ICFIntPubTopDomainObj> get$OptionalOrRequired$ComponentsTopDomain( boolean forceRead );
 
 	/**
 	 *	Get the required CFLibDbKeyHash256 attribute Id.

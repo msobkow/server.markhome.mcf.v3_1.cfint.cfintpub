@@ -112,49 +112,49 @@ public interface ICFIntPubTopProjectEditObj
 	 *
 	 *	@return	The ICFSecPubTenantObj instance referenced by the Tenant key.
 	 */
-	ICFSecPubTenantObj getRequiredOwnerTenant();
+	ICFSecPubTenantObj get$OptionalOrRequired$OwnerTenant();
 
 	/**
-	 *	Get the required ICFSecPubTenantObj instance referenced by the Tenant key.
+	 *	Get the $optionalorrequired$ ICFSecPubTenantObj instance referenced by the Tenant key.
 	 *
-	 *	@return	The required ICFSecPubTenantObj instance referenced by the Tenant key.
+	 *	@return	The $optionalorrequired$ ICFSecPubTenantObj instance referenced by the Tenant key.
 	 */
-	ICFSecPubTenantObj getRequiredOwnerTenant( boolean forceRead );
+	ICFSecPubTenantObj get$OptionalOrRequired$OwnerTenant( boolean forceRead );
 
 	/**
 	 *	Set the ICFSecPubTenantObj instance referenced by the Tenant key.
 	 *
 	 *	@param	value	the ICFSecPubTenantObj instance to be referenced by the Tenant key.
 	 */
-	void setRequiredOwnerTenant( ICFSecPubTenantObj value );
+	void set$OptionalOrRequired$OwnerTenant( ICFSecPubTenantObj value );
 
 	/**
 	 *	Get the ICFIntPubTopDomainObj instance referenced by the ParentSDom key.
 	 *
 	 *	@return	The ICFIntPubTopDomainObj instance referenced by the ParentSDom key.
 	 */
-	ICFIntPubTopDomainObj getRequiredContainerParentSDom();
+	ICFIntPubTopDomainObj get$OptionalOrRequired$ContainerParentSDom();
 
 	/**
-	 *	Get the required ICFIntPubTopDomainObj instance referenced by the ParentSDom key.
+	 *	Get the $optionalorrequired$ ICFIntPubTopDomainObj instance referenced by the ParentSDom key.
 	 *
-	 *	@return	The required ICFIntPubTopDomainObj instance referenced by the ParentSDom key.
+	 *	@return	The $optionalorrequired$ ICFIntPubTopDomainObj instance referenced by the ParentSDom key.
 	 */
-	ICFIntPubTopDomainObj getRequiredContainerParentSDom( boolean forceRead );
+	ICFIntPubTopDomainObj get$OptionalOrRequired$ContainerParentSDom( boolean forceRead );
 
 	/**
 	 *	Set the ICFIntPubTopDomainObj instance referenced by the ParentSDom key.
 	 *
 	 *	@param	value	the ICFIntPubTopDomainObj instance to be referenced by the ParentSDom key.
 	 */
-	void setRequiredContainerParentSDom( ICFIntPubTopDomainObj value );
+	void set$OptionalOrRequired$ContainerParentSDom( ICFIntPubTopDomainObj value );
 
 	/**
 	 *	Get a list ICFIntPubSubProjectObj instances referenced by the SubProject key.
 	 *
 	 *	@return	The (potentially empty) list of ICFIntPubSubProjectObj instances referenced by the SubProject key.
 	 */
-	List<ICFIntPubSubProjectObj> getOptionalComponentsSubProject();
+	List<ICFIntPubSubProjectObj> get$OptionalOrRequired$ComponentsSubProject();
 
 	/**
 	 *	Get the required CFLibDbKeyHash256 attribute Id.
